@@ -134,3 +134,44 @@ html,
 body {
   font-size: 62.5%;
 }
+header {
+  font-family: 'Mali', cursive;
+}
+header nav {
+  box-shadow: inset 0 0 1.5rem #4b290d;
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 2.6rem;
+  padding: 0 10rem;
+  background-image: url(/images/dark-wheat.jpg);
+  position: fixed;
+  top: 0;
+  border-bottom: 5px solid #cabdb0;
+}
+header nav a {
+  align-self: center;
+  text-decoration: none;
+  color: #a85f1a;
+  font-weight: Bold Italic;
+  padding: 1rem;
+}
+header nav a:hover {
+  background: #eeedd7;
+  border-radius: 0.6rem;
+  font-size: 2.8rem;
+}
+header nav img {
+  height: 11rem;
+  width: 23rem;
+  position: relative;
+  top: 1.5rem;
+}
+header .slide-show {
+  margin-top: 7rem;
+  height: 30rem;
+  width: 100%;
+  background: #90a955;
+}
