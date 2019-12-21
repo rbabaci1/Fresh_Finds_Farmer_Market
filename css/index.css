@@ -1,0 +1,228 @@
+.img-style {
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  background-color: #f6f4d2;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Mali', cursive;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+p {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.about img {
+  width: 45%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+}
+.about .about_content {
+  margin: 1%;
+  align-self: center;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-bottom: 3%;
+}
+.team img {
+  width: 45%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+}
+.team .team_content {
+  margin: 1%;
+  align-self: center;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.members .member {
+  display: flex;
+  width: 45%;
+  margin-top: 5%;
+}
+.members .member img {
+  width: 40%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+}
+.members .member .member_content {
+  margin: 1%;
+  margin-top: 3%;
+}
+.members .rpic {
+  flex-direction: row-reverse;
+}
