@@ -1,15 +1,14 @@
 header {
-    font-family: 'Mali', cursive;
+    font-family: 'Mali';
     nav {
         box-shadow: inset 0 0 1.5rem #4b290d;
-        .size(7rem, 100%);
+        .size(7.5rem, 100%);
         .flex(space-between, row);
         font-size: 2.6rem;
         padding: 0 10rem;
-        background-image: url(/images/dark-wheat.jpg);
         position: fixed;
         top: 0;
-        border-bottom: 5px solid #cabdb0;
+        // border-bottom: 5px solid #cabdb0;
         a {
             .anchor-specs();
             &:hover {
@@ -24,11 +23,40 @@ header {
             top: 1.5rem;
         }
     }
+    section {
+        display: flex;
+        margin-top: 15.5rem;
+        .intro {
+            .flex(center, column);
+            width: 50%;
+            padding: 0 11rem;
+            button {
+                .button-specs();
+            }
+        }
+        .slide-show {
+            width: 50%;
+            height: 60rem;
+            .radius(3rem, 3rem);
+            overflow: hidden;
 
-    .slide-show {
-        margin-top: 7rem;
-        .size(30rem, 100%);
-        
-        background: #90a955;
+            img {
+                width: 20%;
+                height: 600px;
+                float: left;
+                .radius(3rem, 3rem);
+            }
+            figure {
+                position: relative;
+                width: 500%;
+                margin: 0px;
+                left: 0px;
+                z-index: -99;
+                animation: farmers 15s infinite linear;
+            }
+            
+        }
+
     }
+    
 }
