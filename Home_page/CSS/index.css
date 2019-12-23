@@ -1,3 +1,35 @@
+@keyframes farmers {
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  65% {
+    left: -300%;
+  }
+  80% {
+    left: -300%;
+  }
+  85% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -106,6 +138,7 @@ section {
 }
 body {
   line-height: 1;
+  background-image: url(/images/dark-wheat.jpg);
 }
 ol,
 ul {
@@ -134,22 +167,31 @@ html,
 body {
   font-size: 62.5%;
 }
+p {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-family: 'Nunito' 'Italic';
+  color: #5c9ead;
+}
+h2 {
+  font-size: 2.8rem;
+  color: #90a955;
+}
 header {
-  font-family: 'Mali', cursive;
+  font-family: 'Mali';
 }
 header nav {
   box-shadow: inset 0 0 1.5rem #4b290d;
-  height: 7rem;
+  height: 7.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   font-size: 2.6rem;
   padding: 0 10rem;
-  background-image: url(/images/dark-wheat.jpg);
   position: fixed;
   top: 0;
-  border-bottom: 5px solid #cabdb0;
 }
 header nav a {
   align-self: center;
@@ -169,9 +211,68 @@ header nav img {
   position: relative;
   top: 1.5rem;
 }
-header .slide-show {
-  margin-top: 7rem;
-  height: 30rem;
+header section {
+  display: flex;
+  margin-top: 15.5rem;
+}
+header section .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 11rem;
+}
+header section .intro button {
+  background: orange;
+  font-size: 2.5rem;
+  padding: 1rem 3rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+header section .slide-show {
+  width: 50%;
+  height: 60rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  overflow: hidden;
+}
+header section .slide-show img {
+  width: 20%;
+  height: 600px;
+  float: left;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+header section .slide-show figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0px;
+  z-index: -99;
+  animation: farmers 15s infinite linear;
+}
+.top-main-content .top {
+  margin-top: 3rem;
+  text-align: center;
+  box-shadow: 0 1px 4px #999;
+  padding: 2.5rem 0;
+}
+.top-main-content .top h2 {
+  padding-top: 1rem;
+  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+  font-size: 4rem;
+}
+.top-main-content .top h4 {
+  font-family: 'Mali';
+  font-size: 2rem;
+}
+.top-main-content .arrow-down {
+  text-align: center;
+  background: #f3f3ea;
+  box-shadow: 0 1px 4px #999;
+}
+.main-content {
+  height: 40rem;
   width: 100%;
-  background: #90a955;
+  background: #f3f3ea;
 }
