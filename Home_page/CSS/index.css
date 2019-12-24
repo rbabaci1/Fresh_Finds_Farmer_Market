@@ -244,10 +244,10 @@ header section {
 }
 header section .intro {
   display: flex;
-  justify-content: center;
+  justify-content: 0;
   flex-direction: column;
   width: 50%;
-  padding: 0 3rem 0 4rem;
+  padding: 5rem 3rem 0 4rem;
 }
 header section .intro button {
   background: orange;
@@ -276,6 +276,7 @@ header section .slide-show figure {
   margin: 0px;
   left: 0px;
   z-index: -99;
+  animation: farmers 15s infinite;
 }
 .top-main-content .top {
   margin-top: 3rem;
