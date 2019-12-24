@@ -2,17 +2,19 @@ header {
     nav {
         .size(7.5rem, 100%);
         .flex(space-between, row);
-        font-size: 2.6rem;
         position: fixed;
         top: 0;
 
         .logo-style();
         .logo {
-            position: absolute;
-            .size(7.6rem, 7rem);
-            left: 22.5rem;
+            width: 26.5rem;
+            display: flex;
+            margin-left: 2.5rem;
+            img {
+                .size(7.6rem, 7rem);
+            }
         }
-        div {
+        .navigation {
             width: 60%;
             .flex(space-around, row);
             a {
@@ -21,7 +23,6 @@ header {
                     background: #334d5b;
                     color: #fff;
                     border-radius: 0.5rem;
-                    // font-size: 2.8rem;
                 }
             }
         }
