@@ -10,20 +10,39 @@
             font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
             font-size: 4rem;
         }
-        h4 {
-            font-family: 'Mali';
-            font-size: 2rem;
-        }
+        
     }
     .arrow-down {
         text-align: center;
-        background: #f3f3ea;
+        background: #fff;
         box-shadow: 0 1px 4px #999;
     }
 }
 
 .main-content {
-    height: 40rem;
-    width: 100%;
-    background: #f3f3ea;
+    height: 100rem;
+    
+    .produce {
+        background: #fff;
+        #grapes {
+            .size(20rem, 40rem);
+            align-self: center;
+        }
+        .flex(space-evenly, row);
+    }
+    .bottom-content {
+        // background: #f0f1dd;
+        .flex(space-between, row);
+        padding: 2rem 0 2rem 4rem;
+        
+        h2 {
+            padding-bottom: 3rem;
+        }
+        .bottom-left {
+            width: 49%;
+        }
+        .bottom-right {
+            width: 49%;
+        }
+    }
 }

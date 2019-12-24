@@ -2,29 +2,26 @@
   0% {
     left: 0%;
   }
-  15% {
+  20% {
     left: 0%;
   }
-  20% {
+  25% {
     left: -100%;
   }
-  35% {
+  45% {
     left: -100%;
   }
-  40% {
+  50% {
     left: -200%;
   }
-  60% {
+  70% {
     left: -200%;
   }
-  65% {
+  75% {
     left: -300%;
   }
-  80% {
+  95% {
     left: -300%;
-  }
-  85% {
-    left: -400%;
   }
   100% {
     left: -400%;
@@ -168,51 +165,81 @@ body {
   font-size: 62.5%;
 }
 p {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   font-size: 1.8rem;
   line-height: 2.5rem;
-  font-family: 'Nunito' 'Italic';
-  color: #5c9ead;
+  font-family: 'Nunito', Sans-serif;
+  font-weight: 600;
 }
-h2 {
-  font-size: 2.8rem;
-  color: #90a955;
-}
-header {
+a {
   font-family: 'Mali';
 }
+h2 {
+  font-size: 3.2rem;
+  color: #90a955;
+  font-family: 'Mali';
+}
+h3 {
+  font-family: 'Mali';
+  font-size: 2.5rem;
+  color: #33646e;
+}
 header nav {
-  box-shadow: inset 0 0 1.5rem #4b290d;
   height: 7.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   font-size: 2.6rem;
-  padding: 0 10rem;
   position: fixed;
   top: 0;
 }
-header nav a {
+header nav h1 {
+  width: 25rem;
   align-self: center;
+  padding-left: 1rem;
+  font-size: 3.5rem;
+  color: #a85f1a;
+  text-align: center;
+  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+  font-weight: bold;
+}
+header nav .logo {
+  position: absolute;
+  height: 7.6rem;
+  width: 7rem;
+  left: 22.5rem;
+}
+header nav div {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+header nav div a {
+  align-self: center;
+  text-align: center;
   text-decoration: none;
   color: #a85f1a;
-  font-weight: Bold Italic;
+  font-weight: bold Italic;
   padding: 1rem;
 }
-header nav a:hover {
-  background: #eeedd7;
-  border-radius: 0.6rem;
-  font-size: 2.8rem;
+header nav div a:hover {
+  background: #334d5b;
+  color: #fff;
+  border-radius: 0.5rem;
 }
-header nav img {
-  height: 11rem;
-  width: 23rem;
-  position: relative;
-  top: 1.5rem;
+header .shrink {
+  background-color: #f0f1dd;
+  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
+  border-bottom-right-radius: 8rem;
+  border-bottom-left-radius: 8rem;
+  opacity: 0.9;
 }
 header section {
   display: flex;
+  justify-content: 0;
+  flex-direction: row;
   margin-top: 15.5rem;
 }
 header section .intro {
@@ -220,7 +247,7 @@ header section .intro {
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  padding: 0 11rem;
+  padding: 0 3rem 0 4rem;
 }
 header section .intro button {
   background: orange;
@@ -231,17 +258,17 @@ header section .intro button {
 }
 header section .slide-show {
   width: 50%;
-  height: 60rem;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
   overflow: hidden;
 }
 header section .slide-show img {
   width: 20%;
-  height: 600px;
   float: left;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
+  border: 4px solid #5c9ead;
+  border-right: none;
 }
 header section .slide-show figure {
   position: relative;
@@ -249,7 +276,6 @@ header section .slide-show figure {
   margin: 0px;
   left: 0px;
   z-index: -99;
-  animation: farmers 15s infinite linear;
 }
 .top-main-content .top {
   margin-top: 3rem;
@@ -262,17 +288,37 @@ header section .slide-show figure {
   font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
   font-size: 4rem;
 }
-.top-main-content .top h4 {
-  font-family: 'Mali';
-  font-size: 2rem;
-}
 .top-main-content .arrow-down {
   text-align: center;
-  background: #f3f3ea;
+  background: #fff;
   box-shadow: 0 1px 4px #999;
 }
 .main-content {
-  height: 40rem;
-  width: 100%;
-  background: #f3f3ea;
+  height: 100rem;
+}
+.main-content .produce {
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.main-content .produce #grapes {
+  height: 20rem;
+  width: 40rem;
+  align-self: center;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2rem 0 2rem 4rem;
+}
+.main-content .bottom-content h2 {
+  padding-bottom: 3rem;
+}
+.main-content .bottom-content .bottom-left {
+  width: 49%;
+}
+.main-content .bottom-content .bottom-right {
+  width: 49%;
 }
