@@ -1,9 +1,13 @@
 header {
+    background: lighten(#f6f4d2, 4%);
     nav {
-        .size(8rem, 100%);
-        .flex(space-between, row);
+        background: #fff;
+        max-width: 130rem;
         position: fixed;
         top: 0;
+        z-index: 99;
+        .size(8rem, 100%);
+        .flex(space-between, row);
 
         .logo {
             .logo-style();
@@ -21,16 +25,15 @@ header {
         }
     }
     .nav-on-scroll {
-        background-color: #f0f1dd;
+        background-image: url(/images/dark-wheat.jpg);
         box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
-        border-bottom-right-radius: 7rem;
-        border-bottom-left-radius: 7rem;
-        opacity: 0.95;
+        opacity: 0.98;
     }
 
     .under-nav {
         .flex(0, row);
-        margin-top: 16rem;
+        margin-top: 8rem;
+        padding: 8rem 0 4rem 0;
 
         .intro {
             .flex(0, column);
@@ -53,8 +56,7 @@ header {
                 width: 1000%;
                 margin: 0px;
                 left: 0px;
-                z-index: -99;
-                // animation: sliders 28s infinite;
+                // animation: sliders 30s infinite;
             }
             img {
                 width: 10%;
