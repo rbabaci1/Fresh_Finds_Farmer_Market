@@ -1,30 +1,63 @@
-@keyframes farmers {
+@keyframes sliders {
   0% {
+    left: 0;
+  }
+  7% {
     left: 0%;
+  }
+  10% {
+    left: -100%;
+  }
+  17% {
+    left: -100%;
   }
   20% {
-    left: 0%;
+    left: -200%;
   }
-  25% {
-    left: -100%;
+  27% {
+    left: -200%;
   }
-  45% {
-    left: -100%;
+  30% {
+    left: -300%;
+  }
+  37% {
+    left: -300%;
+  }
+  40% {
+    left: -400%;
+  }
+  47% {
+    left: -400%;
   }
   50% {
-    left: -200%;
+    left: -500%;
+  }
+  57% {
+    left: -500%;
+  }
+  60% {
+    left: -600%;
+  }
+  67% {
+    left: -600%;
   }
   70% {
-    left: -200%;
+    left: -700%;
   }
-  75% {
-    left: -300%;
+  77% {
+    left: -700%;
   }
-  95% {
-    left: -300%;
+  80% {
+    left: -800%;
+  }
+  87% {
+    left: -800%;
+  }
+  90% {
+    left: -900%;
   }
   100% {
-    left: -400%;
+    left: -900%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -166,27 +199,46 @@ body {
 }
 p {
   padding: 1.2rem 0;
-  font-size: 1.8rem;
   line-height: 2.5rem;
+  font-size: 1.8rem;
   font-family: 'Nunito', Sans-serif;
+  color: 0;
   font-weight: 600;
-}
-a {
-  font-family: 'Mali';
-  font-size: 2.6rem;
 }
 h2 {
   font-size: 3.2rem;
+  font-family: 'Mali', Sans-serif;
   color: #90a955;
-  font-family: 'Mali';
 }
 h3 {
-  font-family: 'Mali';
   font-size: 2.5rem;
+  font-family: 'Mali', Sans-serif;
   color: #33646e;
 }
+header a,
+.under-nav a {
+  font-size: 2.5rem;
+  font-family: 'Mali', Sans-serif;
+  color: #a85f1a;
+  align-self: center;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 5px 9px 4px #b8af89;
+}
+header a:active,
+.under-nav a:active {
+  box-shadow: 0 5px 10px #b48a3b;
+  transform: translateY(1px);
+}
+header a:hover,
+.under-nav a:hover {
+  background: #2e889c !important;
+  color: #fff;
+  border-radius: 0.8rem;
+}
 header nav {
-  height: 7.5rem;
+  height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -194,23 +246,23 @@ header nav {
   position: fixed;
   top: 0;
 }
-header nav h1 {
-  width: 25rem;
-  align-self: center;
-  padding-left: 1rem;
-  font-size: 3.5rem;
-  color: #a85f1a;
-  text-align: center;
-  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
-  font-weight: bold;
-}
 header nav .logo {
   width: 26.5rem;
   display: flex;
   margin-left: 2.5rem;
 }
+header nav .logo h1 {
+  width: 25rem;
+  align-self: center;
+  text-align: center;
+  padding-left: 1rem;
+  font-size: 3.5rem;
+  color: #a85f1a;
+  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+  font-weight: bold;
+}
 header nav .logo img {
-  height: 7.6rem;
+  height: 8rem;
   width: 7rem;
 }
 header nav .navigation {
@@ -219,73 +271,80 @@ header nav .navigation {
   justify-content: space-around;
   flex-direction: row;
 }
-header nav .navigation a {
-  align-self: center;
-  text-align: center;
-  text-decoration: none;
-  color: #a85f1a;
-  font-weight: bold Italic;
-  padding: 1rem;
-}
-header nav .navigation a:hover {
-  background: #334d5b;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-header .shrink {
+header .nav-on-scroll {
   background-color: #f0f1dd;
   box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
-  border-bottom-right-radius: 8rem;
-  border-bottom-left-radius: 8rem;
-  opacity: 0.9;
+  border-bottom-right-radius: 7rem;
+  border-bottom-left-radius: 7rem;
+  opacity: 0.95;
 }
-header section {
+header .under-nav {
   display: flex;
   justify-content: 0;
   flex-direction: row;
-  margin-top: 15.5rem;
+  margin-top: 16rem;
 }
-header section .intro {
+header .under-nav .intro {
   display: flex;
   justify-content: 0;
   flex-direction: column;
   width: 50%;
   padding: 5rem 3rem 0 4rem;
 }
-header section .intro button {
-  background: orange;
-  font-size: 2.5rem;
-  padding: 1rem 3rem;
-  border-radius: 1.2rem;
-  cursor: pointer;
+header .under-nav .intro #main-button {
+  background: #5296a5;
+  color: #fff;
+  padding: 1.2rem 1.4rem;
+  margin-top: 2rem;
 }
-header section .slide-show {
+header .under-nav .slide-show {
   width: 50%;
+  overflow: hidden;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  overflow: hidden;
 }
-header section .slide-show img {
-  width: 20%;
+header .under-nav .slide-show figure {
+  position: relative;
+  width: 1000%;
+  margin: 0px;
+  left: 0px;
+  z-index: -99;
+}
+header .under-nav .slide-show img {
+  width: 10%;
   float: left;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
   border: 4px solid #5c9ead;
   border-right: none;
 }
-header section .slide-show figure {
-  position: relative;
-  width: 500%;
-  margin: 0px;
-  left: 0px;
-  z-index: -99;
-  animation: farmers 15s infinite;
+footer {
+  padding-top: 2rem;
+  text-align: center;
+  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
+}
+footer .left-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 35rem;
+}
+footer .social-icons img:hover {
+  background-color: #f1ddb7;
+}
+footer p {
+  padding: 2rem 0;
 }
 .top-main-content .top {
+  padding: 2.5rem 0;
   margin-top: 3rem;
   text-align: center;
   box-shadow: 0 1px 4px #999;
-  padding: 2.5rem 0;
 }
 .top-main-content .top h2 {
   padding-top: 1rem;
@@ -295,13 +354,12 @@ header section .slide-show figure {
 .top-main-content .arrow-down {
   text-align: center;
   background: #fff;
-  box-shadow: 0 1px 4px #999;
+  box-shadow: 0 1px 4px #8f8989;
 }
 .main-content {
-  height: 100rem;
+  background: #fff;
 }
 .main-content .produce {
-  background: #fff;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -315,7 +373,7 @@ header section .slide-show figure {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 2rem 0 2rem 4rem;
+  padding: 2rem 0 6rem 4rem;
 }
 .main-content .bottom-content h2 {
   padding-bottom: 3rem;

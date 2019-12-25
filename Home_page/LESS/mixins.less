@@ -8,19 +8,22 @@
     width: @width;
 }
 .anchor-specs() {
+    .text-style(2.5rem, 'Mali', #a85f1a);
     align-self: center;
-    text-align: center;
     text-decoration: none;
-    color: #a85f1a;
-    font-weight: bold Italic;
-    padding: 1rem;
-}
-.button-specs() {
-    background: orange;
-    font-size: 2.5rem;
-    padding: 1rem 3rem;
-    border-radius: 1.2rem;
-    cursor: pointer;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 5px 9px 4px rgb(184, 175, 137);
+
+    &:active {
+        box-shadow: 0 5px 10px rgb(180, 138, 59);
+        transform: translateY(1px);
+    }
+    &:hover {
+        background: #2e889c!important;
+        color: #fff;
+        border-radius: 0.8rem;
+    }
 }
 .radius(@top-left, @bottom-left) {
     border-top-left-radius: @top-left;
@@ -30,11 +33,16 @@
     h1 {
         width: 25rem;
         align-self: center;
+        text-align: center;
         padding-left: 1rem;
         font-size: 3.5rem;
         color: #a85f1a;
-        text-align: center;
         font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
         font-weight: bold;
     }
+}
+.text-style(@font-size, @font-family,  @color) {
+    font-size: @font-size;
+    font-family: @font-family, Sans-serif;
+    color: @color;
 }

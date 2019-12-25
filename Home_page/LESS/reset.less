@@ -59,22 +59,18 @@ html, body {
 }
 p {
 	padding: 1.2rem 0;
-	font-size: 1.8rem;
 	line-height: 2.5rem;
-	font-family: 'Nunito', Sans-serif;
+	.text-style(1.8rem, 'Nunito', 0);
 	font-weight: 600;
 }
-a {
-	font-family: 'Mali';
-	font-size: 2.6rem;
-}
 h2 {
-	font-size: 3.2rem;
-	color: #90a955;
-	font-family: 'Mali';
+	.text-style(3.2rem, 'Mali', #90a955)
 }
 h3 {
-	font-family: 'Mali';
-	font-size: 2.5rem;
-	color: #33646e;
+	.text-style(2.5rem, 'Mali', #33646e);
+}
+header, .under-nav {
+	a {
+		.anchor-specs();
+	}
 }

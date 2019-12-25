@@ -1,68 +1,67 @@
 header {
     nav {
-        .size(7.5rem, 100%);
+        .size(8rem, 100%);
         .flex(space-between, row);
         position: fixed;
         top: 0;
 
-        .logo-style();
         .logo {
+            .logo-style();
             width: 26.5rem;
             display: flex;
             margin-left: 2.5rem;
             img {
-                .size(7.6rem, 7rem);
+                .size(8rem, 7rem);
             }
         }
+
         .navigation {
             width: 60%;
             .flex(space-around, row);
-            a {
-                .anchor-specs();
-                &:hover {
-                    background: #334d5b;
-                    color: #fff;
-                    border-radius: 0.5rem;
-                }
-            }
         }
     }
-    .shrink {
+    .nav-on-scroll {
         background-color: #f0f1dd;
         box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
-        border-bottom-right-radius: 8rem;
-        border-bottom-left-radius: 8rem;
-        opacity: 0.9;
+        border-bottom-right-radius: 7rem;
+        border-bottom-left-radius: 7rem;
+        opacity: 0.95;
     }
-    section {
+
+    .under-nav {
         .flex(0, row);
-        margin-top: 15.5rem;
+        margin-top: 16rem;
+
         .intro {
             .flex(0, column);
             width: 50%;
             padding: 5rem 3rem 0 4rem;
-            button {
-                .button-specs();
+            #main-button {
+                background: #5296a5;
+                color: #fff;
+                padding: 1.2rem 1.4rem;
+                margin-top: 2rem;
             }
         }
+
         .slide-show {
             width: 50%;
-            .radius(3rem, 3rem);
             overflow: hidden;
+            .radius(3rem, 3rem);
+            figure {
+                position: relative;
+                width: 1000%;
+                margin: 0px;
+                left: 0px;
+                z-index: -99;
+                // animation: sliders 28s infinite;
+            }
             img {
-                width: 20%;
+                width: 10%;
                 float: left;
                 .radius(3rem, 3rem);
                 border: 4px solid #5c9ead;
                 border-right: none;
-            }
-            figure {
-                position: relative;
-                width: 500%;
-                margin: 0px;
-                left: 0px;
-                z-index: -99;
-                animation: farmers 15s infinite;
             }
         }
     }
