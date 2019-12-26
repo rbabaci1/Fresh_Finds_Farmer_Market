@@ -197,7 +197,7 @@ body {
   font-size: 62.5%;
   max-width: 130rem;
   margin: 0 auto;
-  background-image: linear-gradient(#373B44, #5c9ead, #38769b);
+  background-image: linear-gradient(#edfaf4, #f1eede);
 }
 p {
   padding: 1.2rem 0;
@@ -244,9 +244,9 @@ header {
 }
 header nav {
   background: #fff;
-  max-width: 130rem;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 99;
   height: 8rem;
   width: 100%;
@@ -288,15 +288,16 @@ header .under-nav {
   display: flex;
   justify-content: 0;
   flex-direction: row;
+  align-items: center;
   margin-top: 8rem;
-  padding: 8rem 0 4rem 0;
+  padding: 8rem 0rem 4rem 0;
 }
 header .under-nav .intro {
   display: flex;
   justify-content: 0;
   flex-direction: column;
   width: 50%;
-  padding: 5rem 3rem 0 4rem;
+  padding: 0 4rem;
 }
 header .under-nav .intro #main-button {
   background: #5296a5;
@@ -375,7 +376,7 @@ footer p {
   flex-direction: row;
 }
 .main-content .produce #grapes {
-  height: 20rem;
+  height: 18rem;
   width: 40rem;
   align-self: center;
 }

@@ -2,9 +2,10 @@ header {
     background: lighten(#f6f4d2, 4%);
     nav {
         background: #fff;
-        max-width: 130rem;
         position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
         z-index: 99;
         .size(8rem, 100%);
         .flex(space-between, row);
@@ -32,13 +33,14 @@ header {
 
     .under-nav {
         .flex(0, row);
+        align-items: center;
         margin-top: 8rem;
-        padding: 8rem 0 4rem 0;
+        padding: 8rem 0rem 4rem 0;
 
         .intro {
             .flex(0, column);
             width: 50%;
-            padding: 5rem 3rem 0 4rem;
+            padding: 0 4rem;
             #main-button {
                 background: #5296a5;
                 color: #fff;
