@@ -1,21 +1,21 @@
 footer {
     background-image: url(/images/dark-wheat.jpg);
-    padding-top: 2rem;
+    box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
     text-align: center;
-    box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
     
     .left-footer {
-        .flex(center, row);
+        .flex(flex-start, column);
         align-items: center;
+        h2 {
+            padding: 1rem 0;
+        }
     }
     .social-icons {
         .flex(space-evenly, row);
         width: 35rem;
         img:hover {
-            background-color: rgb(241, 221, 183);
+            background-color: rgb(31, 214, 190);
         }
     }
-    p {
-        padding: 1.5rem 0;
-    }
 }
+

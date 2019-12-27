@@ -195,9 +195,9 @@ table {
 html,
 body {
   font-size: 62.5%;
-  max-width: 130rem;
+  max-width: 144rem;
   margin: 0 auto;
-  background-image: linear-gradient(#edfaf4, #f1eede);
+  background-image: linear-gradient(#245031, #c98f38);
 }
 p {
   padding: 1.2rem 0;
@@ -225,7 +225,7 @@ header a,
   align-self: center;
   text-decoration: none;
   padding: 0.6rem 1rem;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 2px 5px 9px 4px #b8af89;
 }
 header a:active,
@@ -246,7 +246,7 @@ header nav {
   background: #fff;
   position: fixed;
   top: 0;
-  left: 0;
+  max-width: 144rem;
   z-index: 99;
   height: 8rem;
   width: 100%;
@@ -281,8 +281,7 @@ header nav .navigation {
 }
 header .nav-on-scroll {
   background-image: url(/images/dark-wheat.jpg);
-  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
-  opacity: 0.98;
+  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
 }
 header .under-nav {
   display: flex;
@@ -310,6 +309,8 @@ header .under-nav .slide-show {
   overflow: hidden;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
+  border: 4px solid #5c9ead;
+  border-right: none;
 }
 header .under-nav .slide-show figure {
   position: relative;
@@ -320,22 +321,21 @@ header .under-nav .slide-show figure {
 header .under-nav .slide-show img {
   width: 10%;
   float: left;
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-  border: 4px solid #5c9ead;
   border-right: none;
 }
 footer {
   background-image: url(/images/dark-wheat.jpg);
-  padding-top: 2rem;
+  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
   text-align: center;
-  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
 }
 footer .left-footer {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
+}
+footer .left-footer h2 {
+  padding: 1rem 0;
 }
 footer .social-icons {
   display: flex;
@@ -344,10 +344,7 @@ footer .social-icons {
   width: 35rem;
 }
 footer .social-icons img:hover {
-  background-color: #f1ddb7;
-}
-footer p {
-  padding: 1.5rem 0;
+  background-color: #1fd6be;
 }
 .top-main-content {
   background-image: url(/images/dark-wheat.jpg);
@@ -384,7 +381,7 @@ footer p {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: 2rem 0 6rem 4rem;
+  padding: 4rem;
 }
 .main-content .bottom-content h2 {
   padding-bottom: 3rem;

@@ -4,8 +4,7 @@ header {
         background: #fff;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        max-width: 144rem;
         z-index: 99;
         .size(8rem, 100%);
         .flex(space-between, row);
@@ -27,8 +26,7 @@ header {
     }
     .nav-on-scroll {
         background-image: url(/images/dark-wheat.jpg);
-        box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #5c9ead;
-        opacity: 0.98;
+        box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
     }
 
     .under-nav {
@@ -53,6 +51,9 @@ header {
             width: 50%;
             overflow: hidden;
             .radius(3rem, 3rem);
+            border: 4px solid #5c9ead;
+            border-right: none;
+
             figure {
                 position: relative;
                 width: 1000%;
@@ -63,8 +64,6 @@ header {
             img {
                 width: 10%;
                 float: left;
-                .radius(3rem, 3rem);
-                border: 4px solid #5c9ead;
                 border-right: none;
             }
         }
