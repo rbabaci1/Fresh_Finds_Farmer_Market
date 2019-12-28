@@ -257,10 +257,10 @@ header nav .navigation a {
     left: 0;
   }
   header nav .navigation a {
-    background: #fff;
+    box-shadow: none;
     align-self: flex-start;
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     font-weight: bold;
@@ -313,6 +313,7 @@ header .under-nav .slide-show figure {
   width: 1000%;
   margin: 0px;
   left: 0px;
+  animation: sliders 30s infinite;
 }
 header .under-nav .slide-show img {
   width: 10%;
@@ -325,7 +326,6 @@ header .under-nav .slide-show img {
     padding: 4rem 0 4rem 0;
   }
   header .under-nav .intro {
-    padding: 0 0.5rem 0 4rem;
     width: 45%;
   }
   header .under-nav .intro #main-button {
@@ -342,13 +342,13 @@ header .under-nav .slide-show img {
     flex-direction: column-reverse;
   }
   header .under-nav .intro {
-    width: 85%;
+    width: 80%;
     padding: 2rem;
   }
   header .under-nav .slide-show {
     border-radius: 3rem;
     border-right: 4px solid #5c9ead;
-    width: 80%;
+    width: 85%;
   }
 }
 footer {
@@ -537,10 +537,10 @@ header a:hover,
   left: 0;
 }
 .nav_tablet_query .navigation a {
-  background: #fff;
+  box-shadow: none;
   align-self: flex-start;
   margin: 1.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   font-weight: bold;
@@ -550,7 +550,6 @@ header a:hover,
   padding: 4rem 0 4rem 0;
 }
 .under-nav_tablet_query .intro {
-  padding: 0 0.5rem 0 4rem;
   width: 45%;
 }
 .under-nav_tablet_query .intro #main-button {
