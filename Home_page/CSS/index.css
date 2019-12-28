@@ -211,7 +211,7 @@ header nav .logo {
   width: 26.5rem;
   display: flex;
   margin-left: 2.5rem;
-  transition: 1s;
+  transition: 0.8s;
 }
 header nav .logo h1 {
   width: 25rem;
@@ -239,11 +239,12 @@ header nav .navigation {
   flex-direction: row;
 }
 header nav .navigation a {
-  transition: 1s;
+  transition: 0.8s;
 }
 @media (max-width: 900px) {
   header nav {
     flex-direction: column;
+    position: inherit;
   }
   header nav .logo {
     margin-left: 0;
@@ -251,6 +252,9 @@ header nav .navigation a {
   }
   header nav .navigation {
     flex-direction: column;
+    position: fixed;
+    top: 6.6rem;
+    left: 0;
   }
   header nav .navigation a {
     background: #fff;
@@ -266,6 +270,12 @@ header .nav-on-scroll {
   background-image: url(/images/dark-wheat.jpg);
   box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
 }
+@media (max-width: 900px) {
+  header .nav-on-scroll {
+    background: #fff;
+    box-shadow: none;
+  }
+}
 header .under-nav {
   display: flex;
   justify-content: 0;
@@ -280,14 +290,14 @@ header .under-nav .intro {
   flex-direction: column;
   width: 50%;
   padding: 0 4rem;
-  transition: 1s;
+  transition: 0.8s;
 }
 header .under-nav .intro #main-button {
   background: #5296a5;
   color: #fff;
   padding: 1.2rem 1.4rem;
   margin-top: 2rem;
-  transition: 1s;
+  transition: 0.8s;
 }
 header .under-nav .slide-show {
   width: 50%;
@@ -296,7 +306,7 @@ header .under-nav .slide-show {
   border-bottom-left-radius: 3rem;
   border: 4px solid #5c9ead;
   border-right: none;
-  transition: 1s;
+  transition: 0.8s;
 }
 header .under-nav .slide-show figure {
   position: relative;
@@ -311,19 +321,34 @@ header .under-nav .slide-show img {
 }
 @media (max-width: 900px) {
   header .under-nav {
-    margin-left: 7.5rem;
+    margin: 0 0 0 7.5rem;
+    padding: 4rem 0 4rem 0;
   }
   header .under-nav .intro {
     padding: 0 0.5rem 0 4rem;
     width: 45%;
   }
   header .under-nav .intro #main-button {
-    font-size: 1.8vw;
+    font-size: 1.6rem;
     margin-top: 0;
     padding: 0.8rem 1.2rem;
   }
   header .under-nav .slide-show {
     width: 55%;
+  }
+}
+@media (max-width: 700px) {
+  header .under-nav {
+    flex-direction: column-reverse;
+  }
+  header .under-nav .intro {
+    width: 85%;
+    padding: 2rem;
+  }
+  header .under-nav .slide-show {
+    border-radius: 3rem;
+    border-right: 4px solid #5c9ead;
+    width: 80%;
   }
 }
 footer {
@@ -360,12 +385,17 @@ footer .social-icons img:hover {
 .top-main-content .top h2 {
   padding-top: 1rem;
   font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
-  font-size: 4rem;
+  font-size: 3.6vw;
 }
 .top-main-content .arrow-down {
   text-align: center;
   background: #fff;
   box-shadow: 0 1px 4px #8f8989;
+}
+@media (max-width: 700px) {
+  .top-main-content .top {
+    padding: 1.5rem 0;
+  }
 }
 .main-content {
   background: #fff;
@@ -374,7 +404,7 @@ footer .social-icons img:hover {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  transition: 1s;
+  transition: 0.8s;
 }
 .main-content .produce div {
   width: 42%;
@@ -382,7 +412,7 @@ footer .social-icons img:hover {
 }
 .main-content .produce div img {
   width: 70%;
-  transition: 1s;
+  transition: 0.8s;
 }
 @media (max-width: 900px) {
   .main-content .produce {
@@ -394,7 +424,7 @@ footer .social-icons img:hover {
   justify-content: space-between;
   flex-direction: row;
   padding: 4rem;
-  transition: 1s;
+  transition: 0.8s;
 }
 .main-content .bottom-content h2 {
   padding-bottom: 3rem;
@@ -407,7 +437,27 @@ footer .social-icons img:hover {
 }
 @media (max-width: 900px) {
   .main-content .bottom-content {
-    padding: 4rem 0.5rem 4rem 11rem;
+    padding: 4rem 1rem 4rem 11rem;
+  }
+}
+@media (max-width: 700px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+  .main-content .bottom-content .bottom {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .main-content .bottom-content .bottom h2 {
+    text-decoration: underline;
+  }
+  .main-content .bottom-content .bottom-left {
+    background: #f9f8e3;
+    margin-bottom: 1rem;
+  }
+  .main-content .bottom-content .bottom-right {
+    background: #f5f4d2;
   }
 }
 html,
@@ -418,7 +468,7 @@ body {
   background-image: linear-gradient(#245031, #c98f38);
 }
 p {
-  padding: 1.2rem 0;
+  padding: 1.5rem 0;
   line-height: 2.5rem;
   font-size: 1.8rem;
   font-family: 'Nunito', Sans-serif;
@@ -437,7 +487,7 @@ h2 {
 }
 @media (max-width: 900px) {
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 h3 {
@@ -447,7 +497,7 @@ h3 {
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 header a,
@@ -464,7 +514,7 @@ header a,
 header a:active,
 .under-nav a:active {
   box-shadow: 0 5px 10px #b48a3b;
-  transform: translateY(1px);
+  transform: translateY(8px);
 }
 header a:hover,
 .under-nav a:hover {
@@ -472,17 +522,21 @@ header a:hover,
   color: #fff;
   border-radius: 0.8rem;
 }
-.tablet_nav_query {
+.nav_tablet_query {
   flex-direction: column;
+  position: inherit;
 }
-.tablet_nav_query .logo {
+.nav_tablet_query .logo {
   margin-left: 0;
   align-self: center;
 }
-.tablet_nav_query .navigation {
+.nav_tablet_query .navigation {
   flex-direction: column;
+  position: fixed;
+  top: 6.6rem;
+  left: 0;
 }
-.tablet_nav_query .navigation a {
+.nav_tablet_query .navigation a {
   background: #fff;
   align-self: flex-start;
   margin: 1.5rem 0;
@@ -491,18 +545,19 @@ header a:hover,
   border-bottom-left-radius: 0;
   font-weight: bold;
 }
-.tablet_under-nav_query {
-  margin-left: 7.5rem;
+.under-nav_tablet_query {
+  margin: 0 0 0 7.5rem;
+  padding: 4rem 0 4rem 0;
 }
-.tablet_under-nav_query .intro {
+.under-nav_tablet_query .intro {
   padding: 0 0.5rem 0 4rem;
   width: 45%;
 }
-.tablet_under-nav_query .intro #main-button {
-  font-size: 1.8vw;
+.under-nav_tablet_query .intro #main-button {
+  font-size: 1.6rem;
   margin-top: 0;
   padding: 0.8rem 1.2rem;
 }
-.tablet_under-nav_query .slide-show {
+.under-nav_tablet_query .slide-show {
   width: 55%;
 }

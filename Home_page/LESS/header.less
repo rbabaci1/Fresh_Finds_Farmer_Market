@@ -18,23 +18,29 @@ header {
             img {
                 .size(8rem, 7rem);
             }
-            transition: 1s;
+            transition: 0.8s;
         }
 
         .navigation {
             width: 60%;
             .flex(space-around, row);
             a {
-                transition: 1s;
+                transition: 0.8s;
             }
         }
+
         @media @tablet {
-            .tablet_nav_query();
+            .nav_tablet_query();
         }
     }
     .nav-on-scroll {
         background-image: url(/images/dark-wheat.jpg);
         box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
+
+        @media @tablet {
+            background: #fff;
+            box-shadow: none;
+        }
     }
 
     .under-nav {
@@ -47,14 +53,14 @@ header {
             .flex(0, column);
             width: 50%;
             padding: 0 4rem;
-            transition: 1s;
+            transition: 0.8s;
 
             #main-button {
                 background: #5296a5;
                 color: #fff;
                 padding: 1.2rem 1.4rem;
                 margin-top: 2rem;
-                transition: 1s;
+                transition: 0.8s;
             }
         }
 
@@ -64,7 +70,7 @@ header {
             .radius(3rem, 3rem);
             border: 4px solid #5c9ead;
             border-right: none;
-            transition: 1s;
+            transition: 0.8s;
 
             figure {
                 position: relative;
@@ -79,8 +85,23 @@ header {
                 border-right: none;
             }
         }
+
         @media @tablet {
-            .tablet_under-nav_query();
+            .under-nav_tablet_query();
+        }
+
+        @media(max-width: 700px) {
+            flex-direction: column-reverse;
+            
+            .intro {
+                width: 85%;
+                padding: 2rem;
+            }
+            .slide-show {
+                border-radius: 3rem;
+                border-right: 4px solid #5c9ead;
+                width: 80%;
+            }
         }
     }
 }
