@@ -23,14 +23,23 @@
 
     .produce {
         .flex(space-around, row);
-        #grapes {
-            .size(18rem, 40rem);
+        transition: 1s;
+        div {
+            width: 42%;
             align-self: center;
+            img {
+                width: 70%;
+                transition: 1s;
+            }
+        }
+        @media @tablet {
+            padding-left: 11rem;
         }
     }
     .bottom-content {
         .flex(space-between, row);
         padding: 4rem;
+        transition: 1s;
 
         h2 {
             padding-bottom: 3rem;
@@ -40,6 +49,9 @@
         }
         .bottom-right {
             width: 49%;
+        }
+        @media @tablet {
+            padding: 4rem 0.5rem 4rem 11rem;
         }
     }
 }
