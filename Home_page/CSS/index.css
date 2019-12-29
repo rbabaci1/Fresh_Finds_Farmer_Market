@@ -279,6 +279,9 @@ nav .navigation a {
   background-image: url(/images/dark-wheat.jpg);
   box-shadow: inset 0.2rem 0.2rem 0.8rem 0.1rem #634a1c;
 }
+.nav-on-scroll a {
+  background: inherit;
+}
 @media (max-width: 900px) {
   .nav-on-scroll {
     background: #fff;
@@ -522,6 +525,7 @@ header a,
   font-size: 2.3rem;
   font-family: 'Mali', Sans-serif;
   color: #a85f1a;
+  background: #fff;
   align-self: center;
   text-decoration: none;
   padding: 0.6rem 1rem;
