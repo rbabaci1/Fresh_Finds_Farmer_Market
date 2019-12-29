@@ -192,10 +192,7 @@ table {
 * {
   box-sizing: border-box;
 }
-header {
-  background: #f9f8e3;
-}
-header nav {
+nav {
   background: #fff;
   position: fixed;
   top: 0;
@@ -207,13 +204,13 @@ header nav {
   justify-content: space-between;
   flex-direction: row;
 }
-header nav .logo {
+nav .logo {
   width: 26.5rem;
   display: flex;
   margin-left: 2.5rem;
   transition: 0.8s;
 }
-header nav .logo h1 {
+nav .logo h1 {
   width: 25rem;
   align-self: center;
   text-align: center;
@@ -224,57 +221,71 @@ header nav .logo h1 {
   font-weight: bold;
 }
 @media (max-width: 900px) {
-  header nav .logo h1 {
+  nav .logo h1 {
     font-size: 3.2rem;
   }
 }
-header nav .logo img {
+nav .logo img {
   height: 8rem;
   width: 7rem;
 }
-header nav .navigation {
+nav .navigation {
   width: 60%;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
-header nav .navigation a {
+nav .navigation a {
   transition: 0.8s;
 }
 @media (max-width: 900px) {
-  header nav {
+  nav {
+    height: 7rem;
+    width: 100%;
     flex-direction: column;
+    justify-content: center;
     position: inherit;
   }
-  header nav .logo {
+  nav .logo {
     margin-left: 0;
     align-self: center;
   }
-  header nav .navigation {
+  nav .navigation {
     flex-direction: column;
     position: fixed;
-    top: 6.6rem;
+    top: 6rem;
     left: 0;
   }
-  header nav .navigation a {
-    box-shadow: none;
+  nav .navigation a {
     align-self: flex-start;
-    margin: 1.5rem 0;
-    font-size: 1.7rem;
+    margin: 1.2rem 0;
+    font-size: 1.5rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    font-weight: bold;
+  }
+  nav .navigation a:hover {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
-header .nav-on-scroll {
+@media (max-width: 900px) and (max-width: 500px) {
+  nav .navigation a {
+    font-weight: bold;
+    background: #ffc600;
+  }
+}
+.nav-on-scroll {
   background-image: url(/images/dark-wheat.jpg);
-  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
+  box-shadow: inset 0.2rem 0.2rem 0.8rem 0.1rem #634a1c;
 }
 @media (max-width: 900px) {
-  header .nav-on-scroll {
+  .nav-on-scroll {
     background: #fff;
     box-shadow: none;
   }
+}
+header {
+  background: #f9f8e3;
 }
 header .under-nav {
   display: flex;
@@ -318,7 +329,6 @@ header .under-nav .slide-show figure {
 header .under-nav .slide-show img {
   width: 10%;
   float: left;
-  border-right: none;
 }
 @media (max-width: 900px) {
   header .under-nav {
@@ -326,15 +336,16 @@ header .under-nav .slide-show img {
     padding: 4rem 0 4rem 0;
   }
   header .under-nav .intro {
-    width: 45%;
+    padding: 0.5rem 0.5rem 0.5rem 4rem;
   }
   header .under-nav .intro #main-button {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 0;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1rem;
   }
-  header .under-nav .slide-show {
-    width: 55%;
+  header .under-nav .slide-show img {
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
   }
 }
 @media (max-width: 700px) {
@@ -348,7 +359,10 @@ header .under-nav .slide-show img {
   header .under-nav .slide-show {
     border-radius: 3rem;
     border-right: 4px solid #5c9ead;
-    width: 85%;
+    width: 80%;
+  }
+  header .under-nav .slide-show img {
+    border-radius: 2.5rem;
   }
 }
 footer {
@@ -385,7 +399,6 @@ footer .social-icons img:hover {
 .top-main-content .top h2 {
   padding-top: 1rem;
   font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
-  font-size: 3.6vw;
 }
 .top-main-content .arrow-down {
   text-align: center;
@@ -407,7 +420,7 @@ footer .social-icons img:hover {
   transition: 0.8s;
 }
 .main-content .produce div {
-  width: 42%;
+  width: 30%;
   align-self: center;
 }
 .main-content .produce div img {
@@ -417,6 +430,9 @@ footer .social-icons img:hover {
 @media (max-width: 900px) {
   .main-content .produce {
     padding-left: 11rem;
+  }
+  .main-content .produce div {
+    width: 42%;
   }
 }
 .main-content .bottom-content {
@@ -437,7 +453,7 @@ footer .social-icons img:hover {
 }
 @media (max-width: 900px) {
   .main-content .bottom-content {
-    padding: 4rem 1rem 4rem 11rem;
+    padding: 4rem 1rem 2rem 11rem;
   }
 }
 @media (max-width: 700px) {
@@ -477,7 +493,8 @@ p {
 }
 @media (max-width: 900px) {
   p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
   }
 }
 h2 {
@@ -487,7 +504,7 @@ h2 {
 }
 @media (max-width: 900px) {
   h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 }
 h3 {
@@ -497,7 +514,7 @@ h3 {
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 header a,
@@ -521,42 +538,4 @@ header a:hover,
   background: #2e889c !important;
   color: #fff;
   border-radius: 0.8rem;
-}
-.nav_tablet_query {
-  flex-direction: column;
-  position: inherit;
-}
-.nav_tablet_query .logo {
-  margin-left: 0;
-  align-self: center;
-}
-.nav_tablet_query .navigation {
-  flex-direction: column;
-  position: fixed;
-  top: 6.6rem;
-  left: 0;
-}
-.nav_tablet_query .navigation a {
-  box-shadow: none;
-  align-self: flex-start;
-  margin: 1.5rem 0;
-  font-size: 1.7rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  font-weight: bold;
-}
-.under-nav_tablet_query {
-  margin: 0 0 0 7.5rem;
-  padding: 4rem 0 4rem 0;
-}
-.under-nav_tablet_query .intro {
-  width: 45%;
-}
-.under-nav_tablet_query .intro #main-button {
-  font-size: 1.6rem;
-  margin-top: 0;
-  padding: 0.8rem 1.2rem;
-}
-.under-nav_tablet_query .slide-show {
-  width: 55%;
 }

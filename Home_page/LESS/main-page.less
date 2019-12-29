@@ -7,7 +7,6 @@
         h2 {
             padding-top: 1rem;
             font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
-            font-size: 3.6vw;
         }
     }
 
@@ -30,8 +29,9 @@
     .produce {
         .flex(space-around, row);
         transition: 0.8s;
+
         div {
-            width: 42%;
+            width: 30%;
             align-self: center;
             img {
                 width: 70%;
@@ -41,6 +41,9 @@
 
         @media @tablet {
             padding-left: 11rem;
+            div {
+                width: 42%;
+            }
         }
     }
     .bottom-content {
@@ -59,7 +62,7 @@
         }
 
         @media @tablet {
-            padding: 4rem 1rem 4rem 11rem;
+            padding: 4rem 1rem 2rem 11rem;
         }
         @media(max-width: 700px) {
             flex-direction: column;

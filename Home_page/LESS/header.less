@@ -1,47 +1,5 @@
 header {
     background: lighten(#f6f4d2, 4%);
-    nav {
-        background: #fff;
-        position: fixed;
-        top: 0;
-        max-width: 144rem;
-        z-index: 99;
-        .size(8rem, 100%);
-        .flex(space-between, row);
-
-        .logo {
-            .logo-style();
-            width: 26.5rem;
-            display: flex;
-            margin-left: 2.5rem;
-            
-            img {
-                .size(8rem, 7rem);
-            }
-            transition: 0.8s;
-        }
-
-        .navigation {
-            width: 60%;
-            .flex(space-around, row);
-            a {
-                transition: 0.8s;
-            }
-        }
-
-        @media @tablet {
-            .nav_tablet_query();
-        }
-    }
-    .nav-on-scroll {
-        background-image: url(/images/dark-wheat.jpg);
-        box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
-
-        @media @tablet {
-            background: #fff;
-            box-shadow: none;
-        }
-    }
 
     .under-nav {
         .flex(0, row);
@@ -82,12 +40,27 @@ header {
             img {
                 width: 10%;
                 float: left;
-                border-right: none;
             }
         }
 
         @media @tablet {
-            .under-nav_tablet_query();
+            margin: 0 0 0 7.5rem;
+            padding: 4rem 0 4rem 0;
+
+            .intro {
+                padding: 0.5rem 0.5rem 0.5rem 4rem;
+
+                #main-button {
+                    font-size: 1.5rem;
+                    margin-top: 0;
+                    padding: 0.8rem 1rem;
+                }
+            }
+            .slide-show {
+                img {
+                    .radius(2.5rem, 2.5rem);
+                }
+            }
         }
 
         @media(max-width: 700px) {
@@ -100,7 +73,10 @@ header {
             .slide-show {
                 border-radius: 3rem;
                 border-right: 4px solid #5c9ead;
-                width: 85%;
+                width: 80%;
+                img {
+                    border-radius: 2.5rem;
+                }
             }
         }
     }
