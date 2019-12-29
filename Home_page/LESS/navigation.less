@@ -1,11 +1,11 @@
 nav {
+    .size(8rem, 100%);
+    .flex(space-between, row);
     background: #fff;
     position: fixed;
     top: 0;
     max-width: 144rem;
     z-index: 99;
-    .size(8rem, 100%);
-    .flex(space-between, row);
 
     .logo {
         .logo-style();
@@ -20,8 +20,9 @@ nav {
     }
 
     .navigation {
-        width: 60%;
         .flex(space-around, row);
+        width: 60%;
+
         a {
             transition: 0.8s;
         }
@@ -29,8 +30,7 @@ nav {
 
     @media @tablet {
         .size(7rem, 100%);
-        flex-direction: column;
-        justify-content: center;
+        .flex(center, row);
         position: inherit;
 
         .logo {
@@ -44,20 +44,20 @@ nav {
             left: 0;
 
             a {
+                .radius(0, 0);
                 align-self: flex-start;
                 margin: 1.2rem 0;
                 font-size: 1.5rem;
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
 
                 &:hover {
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
+                    .radius(0, 0);
                 }
+
                 @media @mobile {
                     font-weight: bold;
                     background: #ffc600;
                 }
+
             }
         }
     }
