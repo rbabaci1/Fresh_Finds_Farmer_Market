@@ -35,7 +35,7 @@ header {
                 width: 1000%;
                 margin: 0px;
                 left: 0px;
-                animation: sliders 30s infinite;
+                // animation: sliders 30s infinite;
             }
             img {
                 width: 10%;
@@ -45,7 +45,7 @@ header {
 
         @media @tablet {
             margin: 0 0 0 7.5rem;
-            padding: 4rem 0 4rem 0;
+            // padding: 4rem 0 4rem 0;
             .intro {
                 padding: 0.5rem 0.5rem 0.5rem 4rem;
 
@@ -57,7 +57,7 @@ header {
             }
             .slide-show {
                 img {
-                    .radius(2.5rem, 2.5rem);
+                    .radius(2rem, 2rem);
                 }
             }
         }
@@ -70,13 +70,30 @@ header {
                 padding: 2rem;
             }
             .slide-show {
-                border-radius: 3rem;
+                border-radius: 2rem;
                 border-right: 4px solid #5c9ead;
                 width: 80%;
 
                 img {
-                    border-radius: 2.5rem;
+                    border-radius: 2rem;
                 }
+            }
+        }
+        
+        @media @mobile {
+            margin: 7rem 0 0 0;
+            padding: 0;
+
+            .slide-show {
+                width: 100%;
+                border-radius: 0;
+                border: none;
+                img {
+                    border-radius: 0;
+                }
+            }
+            .intro {
+                width: 100%;
             }
         }
     }

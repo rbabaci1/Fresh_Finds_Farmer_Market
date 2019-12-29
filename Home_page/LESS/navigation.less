@@ -9,9 +9,8 @@ nav {
 
     .logo {
         .logo-style();
-        width: 26.5rem;
         display: flex;
-        margin-left: 2.5rem;
+        // margin-left: 2.5rem;
         
         img {
             .size(8rem, 7rem);
@@ -45,6 +44,7 @@ nav {
 
             a {
                 .radius(0, 0);
+                background: #ffc600;
                 align-self: flex-start;
                 margin: 1.2rem 0;
                 font-size: 1.5rem;
@@ -52,16 +52,107 @@ nav {
                 &:hover {
                     .radius(0, 0);
                 }
-
-                @media @mobile {
-                    font-weight: bold;
-                    background: #ffc600;
-                }
-
             }
         }
     }
+
+    @media @mobile {
+        position: fixed;
+        top: 0;
+        background: #fff;
+
+        .logo {
+            h1 {
+                font-size: 6vw;
+            }
+            img {
+                width: 13vw;
+            }
+            @media(max-width: 200px) {
+                display: none;
+            }
+        }
+
+        .hamburger {
+            position: fixed;
+            right: 5%;
+            top: 17px;
+            z-index: 99;
+            cursor: pointer;
+
+            .line {
+                width: 8vw;
+                height: 3px;
+                margin: 7px 0;
+                background: #a53c13;
+            }
+
+            @media(max-width: 200px) {
+                right:inherit;
+                .line {
+                    width: 20vw;
+                }
+                
+            }
+        }
+
+        .navigation {
+            .flex(flex-start, column);
+            position: fixed;
+            top: 7rem;
+            left: 75%;
+            width: 100%;
+            height: 100vh;
+            clip-path: circle(70px at 90% -10%);
+            -webkit-clip-path: circle(70px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+
+            
+        }
+        .open {
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            top: 7rem;
+            left: 0;
+            background: #f9f8e3;
+            flex-direction: column;
+            pointer-events: all;
+
+            a {
+                opacity: 0;
+                align-self: center;
+                margin: 3vh 0;
+                border-radius: 2px;
+                font-size: 6vw;
+                box-shadow: none;
+                width: 80%;
+                text-align: center;
+                padding: 1rem 0;
+                &:hover {
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+        a:nth-child(1) {
+            transition: all 0.5s ease 0.2s;
+        }
+        a:nth-child(2) {
+            transition: all 0.5s ease 0.4s;
+        }
+        a:nth-child(3) {
+            transition: all 0.5s ease 0.6s;
+        }
+        a:nth-child(4) {
+            transition: all 0.5s ease 0.8s;
+        }
+        a.fade {
+            opacity: 1;
+        }
+    }
 }
+
 .nav-on-scroll {
     background-image: url(/images/dark-wheat.jpg);
     box-shadow: inset 0.2rem 0.2rem 0.8rem 0.1rem #634a1c;
@@ -72,5 +163,8 @@ nav {
     @media @tablet {
         background: #fff;
         box-shadow: none;
+    }
+    @media @mobile {
+        background-image: url(/images/dark-wheat.jpg);
     }
 }
