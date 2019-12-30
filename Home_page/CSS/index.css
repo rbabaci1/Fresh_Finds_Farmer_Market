@@ -385,8 +385,7 @@ header .under-nav {
   justify-content: 0;
   flex-direction: row;
   align-items: center;
-  margin-top: 8rem;
-  padding: 8rem 0rem 4rem 0;
+  padding: 12rem 0rem 4rem 0;
 }
 header .under-nav .intro {
   display: flex;
@@ -424,7 +423,8 @@ header .under-nav .slide-show img {
 }
 @media (max-width: 900px) {
   header .under-nav {
-    margin: 0 0 0 7.5rem;
+    margin-left: 7.5rem;
+    padding: 4rem 0 4rem 0;
   }
   header .under-nav .intro {
     padding: 0.5rem 0.5rem 0.5rem 4rem;
@@ -605,9 +605,6 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   background-image: linear-gradient(#245031, #c98f38);
-}
-.wrapper {
-  background-color: #fff;
 }
 p {
   font-size: 1.6rem;
