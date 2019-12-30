@@ -278,7 +278,8 @@ nav .navigation a {
     font-size: 6vw;
   }
   nav .logo img {
-    width: 13vw;
+    width: 14vw;
+    height: 7rem;
   }
   nav .hamburger {
     position: fixed;
@@ -321,7 +322,7 @@ nav .navigation a {
     opacity: 0;
     align-self: center;
     margin: 3vh 0;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 6vw;
     box-shadow: none;
     width: 80%;
@@ -329,7 +330,9 @@ nav .navigation a {
     padding: 1rem 0;
   }
   nav .open a:hover {
-    border-radius: 10px;
+    border-radius: 0;
+    transition: 0s;
+    transform: translateY(1px);
   }
   nav a:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -431,7 +434,7 @@ header .under-nav .slide-show img {
     padding: 0.5rem 0.5rem 0.5rem 4rem;
   }
   header .under-nav .intro #main-button {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 0;
     padding: 0.8rem 1rem;
   }

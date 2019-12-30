@@ -65,7 +65,8 @@ nav {
                 font-size: 6vw;
             }
             img {
-                width: 13vw;
+                width: 14vw;
+                height: 7rem;
             }
             @media(max-width: 200px) {
                 display: none;
@@ -123,14 +124,17 @@ nav {
                 opacity: 0;
                 align-self: center;
                 margin: 3vh 0;
-                border-radius: 2px;
+                border-radius: 4px;
                 font-size: 6vw;
                 box-shadow: none;
                 width: 80%;
                 text-align: center;
                 padding: 1rem 0;
+                
                 &:hover {
-                    border-radius: 10px;
+                    border-radius: 0;
+                    transition: 0s;
+                    transform: translateY(1px);
                 }
             }
         }
