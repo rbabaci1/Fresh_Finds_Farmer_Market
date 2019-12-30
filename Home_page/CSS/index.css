@@ -324,13 +324,12 @@ nav .navigation a {
     margin: 3vh 0;
     border-radius: 4px;
     font-size: 6vw;
-    box-shadow: none;
-    width: 80%;
+    width: 60%;
     text-align: center;
     padding: 1rem 0;
   }
   nav .open a:hover {
-    border-radius: 0;
+    border-radius: 4px;
     transition: 0s;
     transform: translateY(1px);
   }
@@ -338,13 +337,13 @@ nav .navigation a {
     transition: all 0.5s ease 0.2s;
   }
   nav a:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
+    transition: all 0.5s ease 0.2s;
   }
   nav a:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
+    transition: all 0.5s ease 0.2s;
   }
   nav a:nth-child(4) {
-    transition: all 0.5s ease 0.8s;
+    transition: all 0.5s ease 0.2s;
   }
   nav a.fade {
     opacity: 1;
@@ -511,6 +510,12 @@ footer .social-icons img:hover {
 .top-main-content .top h2 {
   padding-top: 1rem;
   font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+  font-size: 3.5rem;
+}
+@media (max-width: 900px) {
+  .top-main-content .top h2 {
+    font-size: 4vw;
+  }
 }
 .top-main-content .arrow-down {
   background: #fff;
@@ -519,6 +524,9 @@ footer .social-icons img:hover {
 @media (max-width: 700px) {
   .top-main-content .top {
     padding: 1.5rem 0;
+  }
+  .top-main-content .top h2 {
+    font-size: 5vw;
   }
 }
 .main-content {
@@ -669,17 +677,16 @@ header a,
   align-self: center;
   text-decoration: none;
   padding: 0.6rem 1rem;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 2px 5px 9px 4px #b8af89;
 }
 header a:active,
 .under-nav a:active {
   box-shadow: 0 5px 10px #b48a3b;
-  transform: translateY(8px);
+  transform: translateY(7px);
 }
 header a:hover,
 .under-nav a:hover {
-  background: #2e889c !important;
+  background: #1f7e94 !important;
   color: #fff;
-  border-radius: 0.8rem;
 }
