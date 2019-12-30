@@ -302,9 +302,10 @@ nav .navigation a {
     left: 75%;
     width: 100%;
     height: 100vh;
+    background-image: url(/images/dark-wheat.jpg);
     clip-path: circle(70px at 90% -10%);
     -webkit-clip-path: circle(70px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 0.8s ease-out;
     pointer-events: none;
   }
   nav .open {
@@ -312,7 +313,7 @@ nav .navigation a {
     -webkit-clip-path: circle(1000px at 90% -10%);
     top: 7rem;
     left: 0;
-    background: #f9f8e3;
+    background-image: url(/images/dark-wheat.jpg);
     flex-direction: column;
     pointer-events: all;
   }
