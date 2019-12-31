@@ -4,12 +4,17 @@
     flex-direction: @direction;
 }
 
-.size (@height, @width) {
+.height-width (@height, @width) {
     height: @height;
     width: @width;
 }
 
-.anchor-specs() {
+.align-text-self(@text, @self) {
+    text-align: @text;
+    align-self: @self;
+}
+
+.links-style {
     .text-style(2.3rem, 'Mali', #a85f1a);
     background: #fff;
     align-self: center;
@@ -35,10 +40,8 @@
 
 .logo-style() {
     h1 {
-        align-self: center;
-        text-align: center;
-        padding-left: 1rem;
-        padding-right: 0.5rem;
+        .align-text-self(center, center);
+        padding: 0 0.3rem 0 1rem;
         font-size: 3.5rem;
         color: #a85f1a;
         font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;

@@ -1,7 +1,7 @@
 nav {
-    .size(8rem, 100%);
-    .flex(space-between, row);
     background: #fff;
+    .height-width(8rem, 100%);
+    .flex(space-between, row);
     position: fixed;
     top: 0;
     max-width: 144rem;
@@ -12,7 +12,7 @@ nav {
         display: flex;
         
         img {
-            .size(8rem, 7rem);
+            .height-width(8rem, 7rem);
         }
         transition: 0.8s;
     }
@@ -27,7 +27,7 @@ nav {
     }
 
     @media @tablet {
-        .size(7rem, 100%);
+        .height-width(7rem, 100%);
         .flex(center, row);
         position: inherit;
 
@@ -56,103 +56,11 @@ nav {
     }
 
     @media @mobile {
-        position: fixed;
-        top: 0;
-        background: #fff;
+        .drop-down-nav();
+    }
 
-        .logo {
-            h1 {
-                font-size: 6vw;
-            }
-            img {
-                width: 14vw;
-                height: 7rem;
-            }
-            @media(max-width: 200px) {
-                display: none;
-            }
-        }
-
-        .hamburger {
-            position: fixed;
-            right: 5%;
-            top: 17px;
-            z-index: 99;
-            cursor: pointer;
-
-            .line {
-                width: 8vw;
-                height: 3px;
-                margin: 7px 0;
-                background: #a53c13;
-            }
-
-            @media(max-width: 200px) {
-                right:inherit;
-                .line {
-                    width: 20vw;
-                }
-                
-            }
-        }
-
-        .navigation {
-            .flex(flex-start, column);
-            position: fixed;
-            top: 7rem;
-            left: 75%;
-            width: 100%;
-            height: 100vh;
-            background-image: url(/images/dark-wheat.jpg);
-            clip-path: circle(70px at 90% -10%);
-            -webkit-clip-path: circle(70px at 90% -10%);
-            transition: all 0.8s ease-out;
-            pointer-events: none;
-
-            
-        }
-        .open {
-            clip-path: circle(1000px at 90% -10%);
-            -webkit-clip-path: circle(1000px at 90% -10%);
-            top: 7rem;
-            left: 0;
-            background-image: url(/images/dark-wheat.jpg);
-            flex-direction: column;
-            pointer-events: all;
-
-            a {
-                opacity: 0;
-                align-self: center;
-                margin: 3vh 0;
-                border-radius: 4px;
-                font-size: 6vw;
-                width: 60%;
-                text-align: center;
-                padding: 1rem 0;
-                
-                &:hover {
-                    border-radius: 4px;
-                    transition: 0s;
-                    transform: translateY(1px);
-                }
-            }
-        }
-        
-        a:nth-child(1) {
-            transition: all 0.5s ease 0.2s;
-        }
-        a:nth-child(2) {
-            transition: all 0.5s ease 0.2s;
-        }
-        a:nth-child(3) {
-            transition: all 0.5s ease 0.2s;
-        }
-        a:nth-child(4) {
-            transition: all 0.5s ease 0.2s;
-        }
-        a.fade {
-            opacity: 1;
-        }
+    @media @very-small-device {
+        .height-width(4rem, 100%);
     }
 }
 
@@ -167,6 +75,7 @@ nav {
         background: #fff;
         box-shadow: none;
     }
+
     @media @mobile {
         background-image: url(/images/dark-wheat.jpg);
     }

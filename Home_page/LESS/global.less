@@ -15,8 +15,8 @@ p {
 		font-size: 1.4rem;
 		line-height: 1.7rem;
 	}
-	//////////	VERY SMALL DEVICES /////////
-	@media (max-width: 200px) {
+
+	@media @very-small-device {
 		line-height: 3vh;
 		font-size: 5vw;
 	}
@@ -28,8 +28,8 @@ h2 {
 	@media @tablet {
 		font-size: 1.9rem;
 	}
-	//////////	VERY SMALL DEVICES /////////
-	@media (max-width: 200px) {
+
+	@media @very-small-device {
 		font-size: 7vw;
 	}
 }
@@ -40,15 +40,15 @@ h3 {
 	@media @tablet {
 		font-size: 1.7rem;
 	}
-	//////////	VERY SMALL DEVICES /////////
-	@media (max-width: 200px) {
+
+	@media @very-small-device {
 		font-size: 6vw;
 	}
 }
 
 header, .under-nav {
 	a {
-		.anchor-specs();
+		.links-style();
 	}
 }
 

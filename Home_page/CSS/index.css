@@ -60,6 +60,25 @@
     left: -900%;
   }
 }
+.links-style {
+  font-size: 2.3rem;
+  font-family: 'Mali', Sans-serif;
+  color: #a85f1a;
+  background: #fff;
+  align-self: center;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  box-shadow: 2px 5px 9px 4px #b8af89;
+}
+.links-style:active {
+  box-shadow: 0 5px 10px #b48a3b;
+  transform: translateY(7px);
+}
+.links-style:hover {
+  background: #1f7e94 !important;
+  color: #fff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -193,12 +212,12 @@ table {
   box-sizing: border-box;
 }
 nav {
+  background: #fff;
   height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background: #fff;
   position: fixed;
   top: 0;
   max-width: 144rem;
@@ -209,10 +228,9 @@ nav .logo {
   transition: 0.8s;
 }
 nav .logo h1 {
-  align-self: center;
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 0.5rem;
+  align-self: center;
+  padding: 0 0.3rem 0 1rem;
   font-size: 3.5rem;
   color: #a85f1a;
   font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
@@ -272,14 +290,13 @@ nav .navigation a {
   nav {
     position: fixed;
     top: 0;
-    background: #fff;
   }
   nav .logo h1 {
     font-size: 6vw;
   }
   nav .logo img {
-    width: 14vw;
     height: 7rem;
+    width: 14vw;
   }
   nav .hamburger {
     position: fixed;
@@ -289,8 +306,8 @@ nav .navigation a {
     cursor: pointer;
   }
   nav .hamburger .line {
-    width: 8vw;
     height: 3px;
+    width: 8vw;
     margin: 7px 0;
     background: #a53c13;
   }
@@ -298,11 +315,10 @@ nav .navigation a {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    position: fixed;
     top: 7rem;
     left: 75%;
-    width: 100%;
     height: 100vh;
+    width: 100%;
     background-image: url(/images/dark-wheat.jpg);
     clip-path: circle(70px at 90% -10%);
     -webkit-clip-path: circle(70px at 90% -10%);
@@ -312,20 +328,17 @@ nav .navigation a {
   nav .open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-    top: 7rem;
-    left: 0;
-    background-image: url(/images/dark-wheat.jpg);
-    flex-direction: column;
     pointer-events: all;
+    left: 0;
   }
   nav .open a {
-    opacity: 0;
+    text-align: center;
     align-self: center;
+    opacity: 0;
     margin: 3vh 0;
     border-radius: 4px;
     font-size: 6vw;
     width: 60%;
-    text-align: center;
     padding: 1rem 0;
   }
   nav .open a:hover {
@@ -357,9 +370,16 @@ nav .navigation a {
 @media (max-width: 500px) and (max-width: 200px) {
   nav .hamburger {
     right: inherit;
+    top: 0;
   }
   nav .hamburger .line {
     width: 20vw;
+  }
+}
+@media (max-width: 200px) {
+  nav {
+    height: 4rem;
+    width: 100%;
   }
 }
 .nav-on-scroll {
@@ -379,6 +399,94 @@ nav .navigation a {
   .nav-on-scroll {
     background-image: url(/images/dark-wheat.jpg);
   }
+}
+.drop-down-nav {
+  position: fixed;
+  top: 0;
+}
+.drop-down-nav .logo h1 {
+  font-size: 6vw;
+}
+.drop-down-nav .logo img {
+  height: 7rem;
+  width: 14vw;
+}
+@media (max-width: 200px) {
+  .drop-down-nav .logo {
+    display: none;
+  }
+}
+.drop-down-nav .hamburger {
+  position: fixed;
+  right: 5%;
+  top: 17px;
+  z-index: 99;
+  cursor: pointer;
+}
+.drop-down-nav .hamburger .line {
+  height: 3px;
+  width: 8vw;
+  margin: 7px 0;
+  background: #a53c13;
+}
+@media (max-width: 200px) {
+  .drop-down-nav .hamburger {
+    right: inherit;
+    top: 0;
+  }
+  .drop-down-nav .hamburger .line {
+    width: 20vw;
+  }
+}
+.drop-down-nav .navigation {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  top: 7rem;
+  left: 75%;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/images/dark-wheat.jpg);
+  clip-path: circle(70px at 90% -10%);
+  -webkit-clip-path: circle(70px at 90% -10%);
+  transition: all 0.8s ease-out;
+  pointer-events: none;
+}
+.drop-down-nav .open {
+  clip-path: circle(1000px at 90% -10%);
+  -webkit-clip-path: circle(1000px at 90% -10%);
+  pointer-events: all;
+  left: 0;
+}
+.drop-down-nav .open a {
+  text-align: center;
+  align-self: center;
+  opacity: 0;
+  margin: 3vh 0;
+  border-radius: 4px;
+  font-size: 6vw;
+  width: 60%;
+  padding: 1rem 0;
+}
+.drop-down-nav .open a:hover {
+  border-radius: 4px;
+  transition: 0s;
+  transform: translateY(1px);
+}
+.drop-down-nav a:nth-child(1) {
+  transition: all 0.5s ease 0.2s;
+}
+.drop-down-nav a:nth-child(2) {
+  transition: all 0.5s ease 0.2s;
+}
+.drop-down-nav a:nth-child(3) {
+  transition: all 0.5s ease 0.2s;
+}
+.drop-down-nav a:nth-child(4) {
+  transition: all 0.5s ease 0.2s;
+}
+.drop-down-nav a.fade {
+  opacity: 1;
 }
 header {
   background: #f9f8e3;
@@ -419,6 +527,7 @@ header .under-nav .slide-show figure {
   width: 1000%;
   margin: 0px;
   left: 0px;
+  animation: sliders 30s infinite;
 }
 header .under-nav .slide-show img {
   width: 10%;
@@ -427,7 +536,7 @@ header .under-nav .slide-show img {
 @media (max-width: 900px) {
   header .under-nav {
     margin-left: 7.5rem;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0;
   }
   header .under-nav .intro {
     padding: 0.5rem 0.5rem 0.5rem 4rem;
@@ -461,7 +570,7 @@ header .under-nav .slide-show img {
 }
 @media (max-width: 500px) {
   header .under-nav {
-    padding: 7rem 0 0 0;
+    padding-top: 7rem;
     margin-left: 0;
   }
   header .under-nav .slide-show {
@@ -474,6 +583,11 @@ header .under-nav .slide-show img {
   }
   header .under-nav .intro {
     width: 100%;
+  }
+}
+@media (max-width: 200px) {
+  header .under-nav {
+    padding-top: 4rem;
   }
 }
 footer {
@@ -574,11 +688,9 @@ footer .social-icons img:hover {
 }
 .main-content .bottom-content h2 {
   padding-bottom: 3rem;
+  text-decoration: underline;
 }
-.main-content .bottom-content .bottom-left {
-  width: 49%;
-}
-.main-content .bottom-content .bottom-right {
+.main-content .bottom-content .bottom {
   width: 49%;
 }
 @media (max-width: 900px) {
@@ -594,9 +706,6 @@ footer .social-icons img:hover {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
-  }
-  .main-content .bottom-content .bottom h2 {
-    text-decoration: underline;
   }
   .main-content .bottom-content .bottom-left {
     background: #f9f8e3;

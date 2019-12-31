@@ -34,7 +34,7 @@ header {
                 width: 1000%;
                 margin: 0px;
                 left: 0px;
-                // animation: sliders 30s infinite;
+                animation: sliders 30s infinite;
             }
             img {
                 width: 10%;
@@ -44,7 +44,8 @@ header {
 
         @media @tablet {
             margin-left: 7.5rem;
-            padding: 4rem 0 4rem 0;
+            padding: 4rem 0;
+
             .intro {
                 padding: 0.5rem 0.5rem 0.5rem 4rem;
 
@@ -54,6 +55,7 @@ header {
                     padding: 0.8rem 1rem;
                 }
             }
+
             .slide-show {
                 img {
                     .radius(2rem, 2rem);
@@ -80,7 +82,7 @@ header {
         }
         
         @media @mobile {
-            padding: 7rem 0 0 0;
+            padding-top: 7rem;
             margin-left: 0;
 
             .slide-show {
@@ -94,6 +96,10 @@ header {
             .intro {
                 width: 100%;
             }
+        }
+        
+        @media @very-small-device {
+            padding-top: 4rem;
         }
     }
 }
