@@ -1,0 +1,110 @@
+.top-main-content {
+    background-image: url(/images/dark-wheat.jpg);
+    text-align: center;
+
+    .top {
+        padding: 2.5rem 0;
+        box-shadow: 0 1px 4px #999;
+
+        h2 {
+            padding-top: 1rem;
+            font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+            font-size: 3.5rem;
+
+            @media @tablet {
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .arrow-down {
+        background: #fff;
+        box-shadow: 0 1px 4px rgb(143, 137, 137);
+    }
+
+    @media(max-width: 700px) {
+        .top {
+            padding: 1.5rem 0;
+            h2 {
+                font-size: 5vw;
+            }
+        }
+    }
+}
+
+.main-content {
+    background: #fff;
+
+    .produce {
+        .flex(space-around, row);
+        transition: 0.8s;
+
+        div {
+            width: 30%;
+            align-self: center;
+
+            img {
+                width: 70%;
+                transition: 0.8s;
+            }
+        }
+
+        @media @tablet {
+            padding-left: 11rem;
+
+            div {
+                width: 42%;
+            }
+        }
+
+        @media @mobile {
+            padding: 0;
+
+            div {
+                width: 48%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .bottom-content {
+        .flex(space-between, row);
+        padding: 4rem;
+        transition: 0.8s;
+
+        h2 {
+            padding-bottom: 3rem;
+            text-decoration: underline;
+        }
+        .bottom {
+            width: 49%;
+        }
+
+        @media @tablet {
+            padding: 4rem 1rem 2rem 11rem;
+        }
+
+        @media(max-width: 700px) {
+            flex-direction: column;
+
+            .bottom {
+                width: 100%;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+            .bottom-left {
+                background: #f9f8e3;
+                margin-bottom: 1rem;
+            }
+            .bottom-right {
+                background: darken(#f9f8e3, 4%);
+            }
+        }
+
+        @media @mobile {
+            padding: 0;
+        }
+    }
+}

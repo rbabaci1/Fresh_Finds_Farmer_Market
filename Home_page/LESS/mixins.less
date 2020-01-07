@@ -1,0 +1,60 @@
+.flex (@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+
+.height-width (@height, @width) {
+    height: @height;
+    width: @width;
+}
+
+.align-text-self(@text, @self) {
+    text-align: @text;
+    align-self: @self;
+}
+
+.links-style {
+    .text-style(2.3rem, 'Mali', #a85f1a);
+    background: #fff;
+    align-self: center;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 5px 9px 4px rgb(184, 175, 137);
+
+    &:active {
+        box-shadow: 0 5px 10px rgb(180, 138, 59);
+        transform: translateY(7px);
+    }
+    &:hover {
+        background: #1f7e94!important;
+        color: #fff;
+    }
+}
+
+.radius(@top-left, @bottom-left) {
+    border-top-left-radius: @top-left;
+    border-bottom-left-radius: @bottom-left;
+}
+
+.logo-style() {
+    h1 {
+        .align-text-self(center, center);
+        padding: 0 0.3rem 0 1rem;
+        font-size: 3.5rem;
+        color: #a85f1a;
+        font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+        font-weight: bold;
+
+        @media @tablet {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.text-style(@font-size, @font-family,  @color) {
+    font-size: @font-size;
+    font-family: @font-family, Sans-serif;
+    color: @color;
+}

@@ -1,0 +1,57 @@
+html, body {
+	font-size: 62.5%;
+	max-width: 144rem;
+	margin: 0 auto;
+	background-image: linear-gradient(#245031, #c98f38);
+}
+
+p {
+	.text-style(1.6rem, 'Nunito', 0);
+	padding: 1.5rem 0;
+	line-height: 2.5rem;
+	font-weight: 600;
+
+	@media @tablet {
+		font-size: 1.4rem;
+		line-height: 1.7rem;
+	}
+
+	@media @very-small-device {
+		line-height: 3vh;
+		font-size: 5vw;
+	}
+}
+
+h2 {
+	.text-style(3rem, 'Mali', #90a955);
+
+	@media @tablet {
+		font-size: 1.9rem;
+	}
+
+	@media @very-small-device {
+		font-size: 7vw;
+	}
+}
+
+h3 {
+	.text-style(2.4rem, 'Mali', #33646e);
+
+	@media @tablet {
+		font-size: 1.7rem;
+	}
+
+	@media @very-small-device {
+		font-size: 6vw;
+	}
+}
+
+header, .under-nav {
+	a {
+		.links-style();
+	}
+}
+
+// * {
+// 	border: 1px solid red!important;
+// }

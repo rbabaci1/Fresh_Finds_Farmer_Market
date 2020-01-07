@@ -1,0 +1,95 @@
+.drop-down-nav {
+    position: fixed;
+    top: 0;
+
+    .logo {
+        h1 {
+            font-size: 6vw;
+        }
+        img {
+            .height-width(7rem, 14vw);
+        }
+        @media @very-small-device {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        position: fixed;
+        right: 5%;
+        top: 17px;
+        z-index: 99;
+        cursor: pointer;
+
+        .line {
+            .height-width(3px, 8vw);
+            margin: 7px 0;
+            background: #a53c13;
+        }
+
+        @media @very-small-device {
+            right: inherit;
+            top: 0;
+            
+            .line {
+                width: 20vw;
+            }
+        }
+    }
+
+    .navigation {
+        .flex(flex-start, column);
+        top: 7rem;
+        left: 75%;
+        .height-width(100vh, 100%);
+        background-image: url(/images/dark-wheat.jpg);
+        clip-path: circle(70px at 90% -10%);
+        -webkit-clip-path: circle(70px at 90% -10%);
+        transition: all 0.8s ease-out;
+        pointer-events: none;
+    }
+
+    .open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        left: 0;
+
+        a {
+            .align-text-self(center, center);
+            opacity: 0;
+            margin: 3vh 0;
+            border-radius: 4px;
+            font-size: 6vw;
+            width: 60%;
+            padding: 1rem 0;
+            
+            &:hover {
+                border-radius: 4px;
+                transition: 0s;
+                transform: translateY(1px);
+            }
+            @media @very-small-device {
+                font-size: 1.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    a:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    a:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+    }
+    a:nth-child(3) {
+        transition: all 0.5s ease 0.2s;
+    }
+    a:nth-child(4) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    a.fade {
+        opacity: 1;
+    }
+}
