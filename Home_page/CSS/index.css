@@ -381,6 +381,9 @@ nav .navigation a {
     height: 4rem;
     width: 100%;
   }
+  nav .navigation {
+    top: 4rem;
+  }
 }
 .nav-on-scroll {
   background-image: url(/images/dark-wheat.jpg);
