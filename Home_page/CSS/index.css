@@ -376,6 +376,12 @@ nav .navigation a {
     width: 20vw;
   }
 }
+@media (max-width: 500px) and (max-width: 200px) {
+  nav .open a {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
 @media (max-width: 200px) {
   nav {
     height: 4rem;
@@ -475,6 +481,12 @@ nav .navigation a {
   border-radius: 4px;
   transition: 0s;
   transform: translateY(1px);
+}
+@media (max-width: 200px) {
+  .drop-down-nav .open a {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 }
 .drop-down-nav a:nth-child(1) {
   transition: all 0.5s ease 0.2s;
