@@ -628,6 +628,12 @@ footer .social-icons {
 footer .social-icons img:hover {
   background-color: #1fd6be;
 }
+footer .social-icons a i {
+  font-size: 4rem;
+}
+footer .social-icons a i:hover {
+  color: #20a4d8;
+}
 .top-main-content {
   background-image: url(/images/dark-wheat.jpg);
   text-align: center;
