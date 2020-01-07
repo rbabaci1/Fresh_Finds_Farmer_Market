@@ -137,7 +137,6 @@ table {
 html {
   font-size: 62.5%;
 }
-h1,
 h2,
 h3,
 h4,
@@ -148,11 +147,13 @@ h2 {
   font-size: 3.2rem;
   font-weight: 700;
   padding-bottom: 10px;
+  color: #90a955;
 }
 h3 {
   font-size: 2.5rem;
   font-weight: 600;
   padding-bottom: 10px;
+  color: #848c8e;
 }
 p {
   font-family: 'Nunito', sans-serif;
@@ -166,9 +167,50 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+nav {
+  height: 8rem;
+  width: 90%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+nav .logo {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  padding: 0 0.3rem 0 1rem;
+  font-size: 3.5rem;
+  color: #a85f1a;
+  font-weight: bold;
+  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+}
+nav .logo img {
+  height: 8rem;
+  width: 7rem;
+}
+nav .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+nav .navigation a {
+  align-self: center;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Mali', cursive;
+  font-size: 2.2rem;
+  padding: 0.8rem;
+  box-shadow: 5px 5px 10px gray;
+  color: #a85f1a;
 }
 footer {
   text-align: center;
@@ -195,7 +237,7 @@ footer .social-icons img {
 .about {
   display: flex;
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 10%;
   padding-bottom: 5%;
 }
 .about img {
