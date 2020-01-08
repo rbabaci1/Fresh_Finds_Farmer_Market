@@ -820,3 +820,58 @@ header a:hover,
   background: #1f7e94 !important;
   color: #fff;
 }
+.contact-form {
+  background: #f0e9df;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  box-shadow: 2px 5px 9px 4px #b8af89;
+}
+.contact-form h2 {
+  padding: 1.2rem 0;
+}
+.contact-form form {
+  width: 90%;
+  max-width: 60rem;
+  margin: auto;
+  padding: 3rem 3rem 5rem 3rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 5px 9px 4px #b8af89;
+}
+.contact-form form .text {
+  border: 1px solid grey;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+.contact-form form .text label {
+  display: block;
+  text-align: left;
+  font-size: 1.8rem;
+  font-family: "Mali";
+  font-weight: bold;
+  color: #1b6575;
+  text-transform: uppercase;
+}
+.contact-form form .text input,
+.contact-form form .text textarea {
+  color: #718d30;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.contact-form form .btn {
+  display: block;
+  background: #5296a5;
+  font-size: 1.7rem;
+  padding: 14px 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Mali";
+  cursor: pointer;
+  margin-top: 2rem;
+}
