@@ -3,12 +3,12 @@
     text-align: center;
     padding-bottom: 2.5rem;
     box-shadow: 2px 5px 9px 4px #b8af89;
-
     h2 {
         padding: 1.2rem 0;
         font-size: 3.5rem;
         letter-spacing: 4px;
     }
+
     form {
         background: #fff;
         width: 90%;
@@ -56,6 +56,7 @@
                 .text-style(1.6rem, "Monaco", #718d30);
             }
         }
+
         .send-btn {
             display: block;
             .text-style(1.8rem, "Mali", #fff);
@@ -69,7 +70,23 @@
 
             &:hover {
                 color: #f5c501;
+                letter-spacing: 2px;
             }
         }
+    }
+
+    @media @tablet {
+        padding-left: 10%;
+        h3 {
+            font-size: 2.4rem;
+        }
+    }
+
+    @media(max-width: 700px) {
+        padding-left: 17%;
+    }
+
+    @media @mobile {
+        padding-left: 0;
     }
 }
