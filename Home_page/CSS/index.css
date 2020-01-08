@@ -880,7 +880,7 @@ header a:hover,
   font-family: "Monaco", Sans-serif;
   color: #718d30;
 }
-.contact-form form .form-btn {
+.contact-form form .send-btn {
   display: block;
   font-size: 1.8rem;
   font-family: "Mali", Sans-serif;
@@ -892,4 +892,7 @@ header a:hover,
   cursor: pointer;
   margin-top: 2rem;
   width: 100%;
+}
+.contact-form form .send-btn:hover {
+  color: #f5c501;
 }
