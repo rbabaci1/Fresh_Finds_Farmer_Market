@@ -2,12 +2,29 @@ nav {
   height: 8rem;
   width: 90%;
   padding-top: 1%;
+  padding-bottom: 1.4rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
+  @media (min-width: 501px) {
   position: fixed;
   top: 0;
   z-index: 99;
+  }
+
+  @media @tablet {
+    padding-top: 13%;
+    padding-bottom: 15%;
+  }
+
+  @media @phone {
+    flex-direction: column;
+    height: 40%;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
 
   .logo {
     display: flex;
@@ -19,9 +36,18 @@ nav {
     font-weight: bold;
     font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
 
+    @media @phone {
+      padding-bottom: 5%;
+    }
+
     img {
       height: 8rem;
       width: 7rem;
+      align-self: center;
+    }
+
+    h1 {
+      align-self: center;
     }
   }
 
@@ -30,6 +56,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+    }
 
     a {
       align-self: center;
@@ -41,6 +72,15 @@ nav {
       padding: 0.8rem;
       box-shadow: 5px 5px 10px gray;
       color: #a85f1a;
+
+      @media @phone {
+        width: 100%;
+        padding: 5% 0 5% 0;
+        margin: 2% 0 2% 0;
+        box-shadow: none;
+        border: solid @ff_teal 3px;
+        font-weight: bold;
+      }
     }
   }
 }
