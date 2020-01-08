@@ -32,7 +32,7 @@
             <div class="navigation">
                 <a href="https://freshfindsfarmersmarket.netlify.com/">Home</a>
                 <a href="#">About</a>
-                <a href="#">Contact Us</a>
+                <a href="#form">Contact Us</a>
                 <a href="#">Sign In <i class="fas fa-sign-in-alt"></i></a>
             </div>
         </nav>
@@ -122,39 +122,39 @@
         </div>
     </div>
 
-    <div class="contact-form">
+    <div class="contact-form" id="form">
         <h2>Contact</h2><br>
         
         <form name="contact" method="POST" netlify>
             <div class="customer-farmer">
-                <h3>I'm a </h3>
+                <h3>I'm a : </h3>
                 <select name="packages">
                     <option value="FunInTheSun">Farmer</option>
                     <option value="MountainExcursion">Shopper</option>
                 </select>
             </div>
 
-            <div class="text">
+            <section>
                 <label>Full Name :</label>
                 <input type="email" placeholder="Enter Your Name">
-            </div>
+            </section>
 
-            <div class="text">
+            <section>
                 <label>Email :</label>
                 <input type="text" placeholder="Enter Your Email">
-            </div>
+            </section>
 
-            <div class="text">
+            <section>
                 <label>Phone Number :</label>
                 <input type="text" placeholder="Enter Your Phone Number">
-            </div>
+            </section>
 
-            <div class="text">
+            <section>
                 <label>Message :</label>
                 <textarea></textarea>
-            </div>
+            </section>
 
-            <a class="btn">Send</a>
+            <a class="form-btn">Send</a>
         </form>
     </div>
 

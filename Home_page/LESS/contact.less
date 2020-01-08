@@ -6,13 +6,15 @@
 
     h2 {
         padding: 1.2rem 0;
+        font-size: 3.5rem;
+        letter-spacing: 4px;
     }
     form {
+        background: #fff;
         width: 90%;
-        max-width: 60rem;
+        max-width: 70rem;
         margin: auto;
         padding: 3rem 3rem 5rem 3rem;
-        background: #fff;
         border-radius: 5px;
         box-shadow: 2px 5px 9px 4px #b8af89;
 
@@ -21,17 +23,17 @@
             margin: auto;
             display: flex;
             align-items: center;
-            padding: 0 0 1.5rem 18px;
+            padding-bottom: 1.5rem;
 
             select {
                 margin-left: 2rem;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 background: #5296a5;
                 color: #fff;
             }
         }
 
-        .text {
+        section {
             border: 1px solid grey;
             margin: 8px 0;
             padding: 12px 18px;
@@ -40,32 +42,27 @@
             label {
                 display: block;
                 text-align: left;
-                font-size: 1.8rem;
-                font-family: "Mali";
+                .text-style(1.7rem, "Mali", #1b6575);
                 font-weight: bold;
-                color: #1b6575;
                 text-transform: uppercase;
             }
 
             input, textarea {
-                color: #718d30;
                 width: 100%;
                 border: none;
                 background: none;
                 outline: none;
-                font-size: 18px;
-                margin-top: 6px;
+                margin-top: 7px;
+                .text-style(1.6rem, "Monaco", #718d30);
             }
         }
-        .btn {
+        .form-btn {
             display: block;
+            .text-style(1.8rem, "Mali", #fff);
             background: #5296a5;
-            font-size: 1.7rem;
             padding: 14px 0;
             text-align: center;
-            color: #fff;
             text-transform: uppercase;
-            font-family: "Mali";
             cursor: pointer;
             margin-top: 2rem;
         }
