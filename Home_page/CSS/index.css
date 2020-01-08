@@ -839,6 +839,19 @@ header a:hover,
   border-radius: 5px;
   box-shadow: 2px 5px 9px 4px #b8af89;
 }
+.contact-form form .customer-farmer {
+  max-width: 60rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0 1.5rem 18px;
+}
+.contact-form form .customer-farmer select {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  background: #5296a5;
+  color: #fff;
+}
 .contact-form form .text {
   border: 1px solid grey;
   margin: 8px 0;
