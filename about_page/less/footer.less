@@ -1,0 +1,26 @@
+footer {
+  text-align: center;
+
+  @media @phone {
+    border-top: solid @ff_teal 2px;
+    margin-top: 10%;
+  }
+
+  .left-footer {
+    .flex(flex-start, column);
+    align-items: center;
+
+    h2 {
+      padding: 1rem 0;
+    }
+  }
+
+  .social-icons {
+    .flex(space-between, row);
+    flex-wrap: wrap;
+    padding: 1%;
+    img {
+      padding: 0 10% 0 10%;
+    }
+  }
+}
