@@ -335,10 +335,9 @@ nav .navigation a {
   nav .open a {
     text-align: center;
     align-self: center;
-    opacity: 0;
     margin: 3vh 0;
     border-radius: 4px;
-    font-size: 6vw;
+    font-size: 5.3vw;
     width: 60%;
     padding: 1rem 0;
   }
@@ -358,9 +357,6 @@ nav .navigation a {
   }
   nav a:nth-child(4) {
     transition: all 0.5s ease 0.2s;
-  }
-  nav a.fade {
-    opacity: 1;
   }
 }
 @media (max-width: 500px) and (max-width: 200px) {
@@ -471,10 +467,9 @@ nav .navigation a {
 .drop-down-nav .open a {
   text-align: center;
   align-self: center;
-  opacity: 0;
   margin: 3vh 0;
   border-radius: 4px;
-  font-size: 6vw;
+  font-size: 5.3vw;
   width: 60%;
   padding: 1rem 0;
 }
@@ -500,9 +495,6 @@ nav .navigation a {
 }
 .drop-down-nav a:nth-child(4) {
   transition: all 0.5s ease 0.2s;
-}
-.drop-down-nav a.fade {
-  opacity: 1;
 }
 header {
   background: #f9f8e3;
