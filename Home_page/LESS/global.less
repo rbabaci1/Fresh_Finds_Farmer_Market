@@ -7,7 +7,7 @@ html, body {
 }
 
 p {
-	.text-style(2rem, 'Nunito', 0);
+	.text-style(2rem, 'Nunito', 0, inherit);
 	padding: 1.5rem 0;
 	line-height: 2.6rem;
 
@@ -17,31 +17,33 @@ p {
 
 	@media @very-small-device {
 		line-height: 5vh;
-		font-size: 7vw;
+		font-size: 6.5vw;
 	}
 }
 
 h2 {
-	.text-style(2.9rem, 'Mali', #90a955);
+	.text-style(2.9rem, 'Mali', #90a955, inherit);
 
 	@media @tablet {
-		font-size: 2rem;
+		font-size: 2.2rem;
+		font-weight: bold;
 	}
 
 	@media @very-small-device {
-		font-size: 7vw;
+		font-size: 7.2vw;
 	}
 }
 
 h3 {
-	.text-style(2.4rem, 'Mali', #33646e);
+	.text-style(2.4rem, 'Mali', #33646e, inherit);
 
 	@media @tablet {
-		font-size: 1.8rem;
+		font-size: 1.9rem;
+		font-weight: bold;
 	}
 
 	@media @very-small-device {
-		font-size: 6vw;
+		font-size: 6.9vw;
 	}
 }
 

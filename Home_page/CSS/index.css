@@ -64,6 +64,7 @@
   font-size: 2.3rem;
   font-family: 'Mali', Sans-serif;
   color: #a85f1a;
+  font-weight: inherit;
   background: #fff;
   align-self: center;
   text-decoration: none;
@@ -518,6 +519,7 @@ header .under-nav .intro #main-button {
   font-size: 2.2rem;
   font-family: inherit, Sans-serif;
   color: #fff;
+  font-weight: inherit;
   background: #5296a5;
   padding: 1.2rem 1.4rem;
   margin-top: 2rem;
@@ -648,6 +650,7 @@ footer .social-icons a i:hover {
 @media (max-width: 900px) {
   .top-main-content .top h2 {
     font-size: 4vw;
+    font-weight: lighter;
   }
 }
 .top-main-content .arrow-down {
@@ -660,6 +663,11 @@ footer .social-icons a i:hover {
   }
   .top-main-content .top h2 {
     font-size: 5vw;
+  }
+}
+@media (max-width: 700px) and (max-width: 200px) {
+  .top-main-content .top h2 {
+    font-size: 6.5vw;
   }
 }
 .main-content {
@@ -751,6 +759,7 @@ p {
   font-size: 2rem;
   font-family: 'Nunito', Sans-serif;
   color: 0;
+  font-weight: inherit;
   padding: 1.5rem 0;
   line-height: 2.6rem;
 }
@@ -762,37 +771,41 @@ p {
 @media (max-width: 200px) {
   p {
     line-height: 5vh;
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 }
 h2 {
   font-size: 2.9rem;
   font-family: 'Mali', Sans-serif;
   color: #90a955;
+  font-weight: inherit;
 }
 @media (max-width: 900px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
   }
 }
 @media (max-width: 200px) {
   h2 {
-    font-size: 7vw;
+    font-size: 7.2vw;
   }
 }
 h3 {
   font-size: 2.4rem;
   font-family: 'Mali', Sans-serif;
   color: #33646e;
+  font-weight: inherit;
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    font-weight: bold;
   }
 }
 @media (max-width: 200px) {
   h3 {
-    font-size: 6vw;
+    font-size: 6.9vw;
   }
 }
 header a,
@@ -800,6 +813,7 @@ header a,
   font-size: 2.3rem;
   font-family: 'Mali', Sans-serif;
   color: #a85f1a;
+  font-weight: inherit;
   background: #fff;
   align-self: center;
   text-decoration: none;
@@ -874,12 +888,14 @@ header a:hover,
   font-size: 1.6rem;
   font-family: "Monaco", Sans-serif;
   color: #718d30;
+  font-weight: inherit;
 }
 .contact-form form .send-btn {
   display: block;
   font-size: 1.8rem;
   font-family: "Mali", Sans-serif;
   color: #fff;
+  font-weight: inherit;
   background: #5296a5;
   padding: 14px 0;
   text-align: center;

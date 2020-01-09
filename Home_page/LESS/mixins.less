@@ -15,7 +15,7 @@
 }
 
 .links-style {
-    .text-style(2.3rem, 'Mali', #a85f1a);
+    .text-style(2.3rem, 'Mali', #a85f1a, inherit);
     background: #fff;
     align-self: center;
     text-decoration: none;
@@ -53,8 +53,9 @@
     }
 }
 
-.text-style(@font-size, @font-family,  @color) {
+.text-style(@font-size, @font-family,  @color, @weight) {
     font-size: @font-size;
     font-family: @font-family, Sans-serif;
     color: @color;
+    font-weight: @weight;
 }
