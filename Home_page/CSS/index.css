@@ -600,6 +600,9 @@ header .under-nav .slide-show img {
   header .under-nav .intro {
     width: 100%;
   }
+  header .under-nav .intro #main-button {
+    font-size: 5vw;
+  }
 }
 @media (max-width: 200px) {
   header .under-nav {
@@ -750,33 +753,33 @@ body {
   background-image: linear-gradient(#245031, #c98f38);
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: 'Nunito', Sans-serif;
   color: 0;
   padding: 1.5rem 0;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: Medium;
 }
 @media (max-width: 900px) {
   p {
-    font-size: 1.4rem;
-    line-height: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 200px) {
   p {
-    line-height: 3vh;
-    font-size: 5vw;
+    line-height: 4vh;
+    font-size: 6vw;
   }
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-family: 'Mali', Sans-serif;
   color: #90a955;
+  font-weight: bold;
 }
 @media (max-width: 900px) {
   h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 200px) {
@@ -788,10 +791,11 @@ h3 {
   font-size: 2.4rem;
   font-family: 'Mali', Sans-serif;
   color: #33646e;
+  font-weight: bold;
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 200px) {
@@ -829,7 +833,7 @@ header a:hover,
 }
 .contact-form h2 {
   padding: 1.2rem 0;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   letter-spacing: 4px;
 }
 .contact-form form {
@@ -843,10 +847,9 @@ header a:hover,
 }
 .contact-form form .customer-farmer {
   max-width: 60rem;
-  margin: auto;
   display: flex;
   align-items: center;
-  padding-bottom: 1.5rem;
+  padding: 0 0 1.5rem 1.8rem;
 }
 .contact-form form .customer-farmer select {
   margin-left: 2rem;
@@ -902,16 +905,47 @@ header a:hover,
     padding-left: 10%;
   }
   .contact-form h3 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 700px) {
   .contact-form {
     padding-left: 17%;
   }
+  .contact-form h2 {
+    font-size: 2.8rem;
+  }
 }
 @media (max-width: 500px) {
   .contact-form {
     padding-left: 0;
+  }
+}
+@media (max-width: 200px) {
+  .contact-form h2 {
+    font-size: 11vw;
+  }
+  .contact-form form {
+    padding: 1rem;
+  }
+  .contact-form form .customer-farmer {
+    flex-direction: column;
+  }
+  .contact-form form .customer-farmer h3 {
+    font-size: 2rem;
+  }
+  .contact-form form .customer-farmer select {
+    margin: 1rem 0 0 0;
+    font-size: 9vw;
+  }
+  .contact-form form section label {
+    font-size: 7vw;
+  }
+  .contact-form form section label input,
+  .contact-form form section label textarea {
+    font-size: 6vw;
+  }
+  .contact-form form .send-btn {
+    font-size: 8vw;
   }
 }

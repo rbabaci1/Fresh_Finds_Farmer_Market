@@ -5,7 +5,7 @@
     box-shadow: 2px 5px 9px 4px #b8af89;
     h2 {
         padding: 1.2rem 0;
-        font-size: 3.5rem;
+        font-size: 3.2rem;
         letter-spacing: 4px;
     }
 
@@ -20,10 +20,9 @@
 
         .customer-farmer {
             max-width: 60rem;
-            margin: auto;
             display: flex;
             align-items: center;
-            padding-bottom: 1.5rem;
+            padding: 0 0 1.5rem  1.8rem;
 
             select {
                 margin-left: 2rem;
@@ -78,15 +77,52 @@
     @media @tablet {
         padding-left: 10%;
         h3 {
-            font-size: 2.4rem;
+            font-size: 2.3rem;
         }
     }
 
     @media(max-width: 700px) {
         padding-left: 17%;
+        h2 {
+            font-size: 2.8rem;
+        }
     }
 
     @media @mobile {
         padding-left: 0;
+    }
+
+    @media @very-small-device {
+        h2 {
+            font-size: 11vw;
+        }
+
+        form {
+            padding: 1rem;
+
+            .customer-farmer {
+                flex-direction: column;
+                h3 {
+                    font-size: 2rem;
+                }
+                select {
+                    margin: 1rem 0 0 0;
+                    font-size: 9vw;
+                }
+            }
+
+            section {
+                label {
+                    font-size: 7vw;
+                    input, textarea {
+                        font-size: 6vw;
+                    }
+                }
+            }
+
+            .send-btn {
+                font-size: 8vw;
+            }
+        }
     }
 }
