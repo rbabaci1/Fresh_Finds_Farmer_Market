@@ -7,14 +7,14 @@ $(window).scroll(function() {
     }
 });
 
-
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".navigation");
 const links = document.querySelectorAll(".navigation a");
 
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+    navLinks.classList.toggle("open");
+});
+
+navLinks.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
 });
