@@ -523,8 +523,10 @@ header .under-nav .intro {
   transition: 0.8s;
 }
 header .under-nav .intro #main-button {
-  background: #5296a5;
+  font-size: 2.2rem;
+  font-family: inherit, Sans-serif;
   color: #fff;
+  background: #5296a5;
   padding: 1.2rem 1.4rem;
   margin-top: 2rem;
   transition: 0.8s;
@@ -751,24 +753,24 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   background-image: linear-gradient(#245031, #c98f38);
+  scroll-behavior: smooth;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Nunito', Sans-serif;
   color: 0;
   padding: 1.5rem 0;
-  line-height: 2.5rem;
-  font-weight: Medium;
+  line-height: 2.6rem;
 }
 @media (max-width: 900px) {
   p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 200px) {
   p {
-    line-height: 4vh;
-    font-size: 6vw;
+    line-height: 5vh;
+    font-size: 7vw;
   }
 }
 h2 {
