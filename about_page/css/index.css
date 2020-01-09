@@ -1,0 +1,413 @@
+.img-style {
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+  height: auto;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  background-color: #f6f4d2;
+}
+html {
+  font-size: 62.5%;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Mali', cursive;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: #90a955;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #848c8e;
+}
+p {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+nav {
+  height: 8rem;
+  width: 90%;
+  padding-top: 1%;
+  padding-bottom: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+@media (min-width: 501px) {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    padding-top: 13%;
+    padding-bottom: 15%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    width: 100%;
+  }
+}
+nav .logo {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  padding: 0 0.3rem 0 1rem;
+  font-size: 3.5rem;
+  color: #a85f1a;
+  font-weight: bold;
+  font-family: 'SignPainter-HouseScript', 'signpainter', 'Brush Script MT', Arial, sans-serif;
+}
+@media (max-width: 500px) {
+  nav .logo {
+    padding-bottom: 5%;
+  }
+}
+nav .logo img {
+  height: 8rem;
+  width: 7rem;
+  align-self: center;
+}
+nav .logo h1 {
+  align-self: center;
+}
+nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 60%;
+}
+@media (max-width: 500px) {
+  nav .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+nav .navigation a {
+  align-self: center;
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Mali', cursive;
+  font-size: 2.2rem;
+  padding: 0.8rem;
+  box-shadow: 5px 5px 10px gray;
+  color: #a85f1a;
+}
+@media (max-width: 500px) {
+  nav .navigation a {
+    width: 100%;
+    padding: 5% 0 5% 0;
+    margin: 2% 0 2% 0;
+    box-shadow: none;
+    border: solid #5c9ead 3px;
+    font-weight: bold;
+  }
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    border-top: solid #5c9ead 2px;
+    margin-top: 10%;
+  }
+}
+footer .left-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+footer .left-footer h2 {
+  padding: 1rem 0;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+footer .social-icons img {
+  padding: 0 10% 0 10%;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+@media (max-width: 800px) {
+  .about {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+}
+.about img {
+  width: 45%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .about img {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.about .about_content {
+  align-self: center;
+  margin: 1%;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .team {
+    flex-direction: column;
+  }
+}
+.team img {
+  width: 45%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+  height: auto;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .team img {
+    align-self: center;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.team .team_content {
+  margin: 1%;
+  align-self: center;
+}
+.members {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .members {
+    flex-direction: column;
+  }
+}
+.members .member {
+  display: flex;
+  width: 45%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .members .member {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+.members .member img {
+  align-self: baseline;
+  width: 40%;
+  margin: 1%;
+  border: 4px solid #5c9ead;
+  border-radius: 25px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .members .member img {
+    align-self: center;
+    width: 60%;
+  }
+}
+.members .member .member_content {
+  margin: 1%;
+  margin-top: 3%;
+}
+.members .member .member_content img {
+  border: none;
+  width: 10%;
+  border-radius: 0;
+}
+@media (max-width: 500px) {
+  .members .member .member_content img {
+    width: 8%;
+  }
+}
+.members .rpic {
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .members .rpic {
+    flex-direction: column;
+  }
+}
