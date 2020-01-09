@@ -1,6 +1,5 @@
 .about {
-  display: flex;
-  justify-content: space-between;
+  .flex(space-between, row);
   margin-top: 10%;
   padding-bottom: 5%;
 
@@ -16,7 +15,6 @@
     width: 45%;
     margin: 1%;
     .img-style();
-    align-self: center;
     @media @phone {
       align-self: center;
       width: 100%;
@@ -24,22 +22,20 @@
     }
   }
   .about_content {
-    margin: 1%;
     align-self: center;
+    margin: 1%;
   }
 }
 
 .team {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  .flex(space-between, row-reverse);
   padding-bottom: 3%;
 
   @media @phone {
     flex-direction: column;
   }
   img {
-    width: 45%;
+    .height-width(auto, 45%);
     margin: 1%;
     .img-style();
     align-self: center;
@@ -56,9 +52,8 @@
 }
 
 .members {
-  display: flex;
+  .flex(space-between, row);
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 5%;
 
   @media @phone {
@@ -76,7 +71,7 @@
     }
     img {
       align-self: baseline;
-      width: 40%;
+      .height-width(auto, 40%);
       margin: 1%;
       .img-style();
       @media @phone {

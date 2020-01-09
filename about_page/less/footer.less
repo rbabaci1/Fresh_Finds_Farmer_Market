@@ -7,10 +7,8 @@ footer {
   }
 
   .left-footer {
-    display: flex;
-    flex-direction: column;
+    .flex(flex-start, column);
     align-items: center;
-    justify-content: flex-start;
 
     h2 {
       padding: 1rem 0;
@@ -18,9 +16,7 @@ footer {
   }
 
   .social-icons {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    .flex(space-between, row);
     flex-wrap: wrap;
     padding: 1%;
     img {
