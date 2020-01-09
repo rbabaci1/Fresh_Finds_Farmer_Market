@@ -3,12 +3,12 @@
     text-align: center;
     padding-bottom: 2.5rem;
     box-shadow: 2px 5px 9px 4px #b8af89;
-
     h2 {
         padding: 1.2rem 0;
-        font-size: 3.5rem;
+        font-size: 3.2rem;
         letter-spacing: 4px;
     }
+
     form {
         background: #fff;
         width: 90%;
@@ -20,10 +20,9 @@
 
         .customer-farmer {
             max-width: 60rem;
-            margin: auto;
             display: flex;
             align-items: center;
-            padding-bottom: 1.5rem;
+            padding: 0 0 1.5rem  1.8rem;
 
             select {
                 margin-left: 2rem;
@@ -56,7 +55,8 @@
                 .text-style(1.6rem, "Monaco", #718d30);
             }
         }
-        .form-btn {
+
+        .send-btn {
             display: block;
             .text-style(1.8rem, "Mali", #fff);
             background: #5296a5;
@@ -65,6 +65,64 @@
             text-transform: uppercase;
             cursor: pointer;
             margin-top: 2rem;
+            width: 100%;
+
+            &:hover {
+                color: #f5c501;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    @media @tablet {
+        padding-left: 10%;
+        h3 {
+            font-size: 2.3rem;
+        }
+    }
+
+    @media(max-width: 700px) {
+        padding-left: 17%;
+        h2 {
+            font-size: 2.8rem;
+        }
+    }
+
+    @media @mobile {
+        padding-left: 0;
+    }
+
+    @media @very-small-device {
+        h2 {
+            font-size: 11vw;
+        }
+
+        form {
+            padding: 1rem;
+
+            .customer-farmer {
+                flex-direction: column;
+                h3 {
+                    font-size: 2rem;
+                }
+                select {
+                    margin: 1rem 0 0 0;
+                    font-size: 9vw;
+                }
+            }
+
+            section {
+                label {
+                    font-size: 7vw;
+                    input, textarea {
+                        font-size: 6vw;
+                    }
+                }
+            }
+
+            .send-btn {
+                font-size: 8vw;
+            }
         }
     }
 }
