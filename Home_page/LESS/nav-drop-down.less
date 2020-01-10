@@ -6,9 +6,11 @@
         h1 {
             font-size: 6vw;
         }
+
         img {
             .height-width(7rem, 14vw);
         }
+
         @media @very-small-device {
             display: none;
         }
@@ -39,9 +41,10 @@
 
     .navigation {
         .flex(flex-start, column);
+        .height-width(100vh, 100%);
+
         top: 7rem;
         left: 75%;
-        .height-width(100vh, 100%);
         background-image: url(/images/dark-wheat.jpg);
         clip-path: circle(70px at 90% -10%);
         -webkit-clip-path: circle(70px at 90% -10%);
@@ -68,6 +71,7 @@
                 transition: 0s;
                 transform: translateY(1px);
             }
+
             @media @very-small-device {
                 font-size: 1.5rem;
                 width: 100%;

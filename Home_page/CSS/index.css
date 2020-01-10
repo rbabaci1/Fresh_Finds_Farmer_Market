@@ -213,12 +213,12 @@ table {
   box-sizing: border-box;
 }
 nav {
-  background: #fff;
   height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background: #fff;
   position: fixed;
   top: 0;
   max-width: 144rem;
@@ -317,10 +317,10 @@ nav .navigation a {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    top: 7rem;
-    left: 75%;
     height: 100vh;
     width: 100%;
+    top: 7rem;
+    left: 75%;
     background-image: url(/images/dark-wheat.jpg);
     clip-path: circle(70px at 90% -10%);
     -webkit-clip-path: circle(70px at 90% -10%);
@@ -449,10 +449,10 @@ nav .navigation a {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  top: 7rem;
-  left: 75%;
   height: 100vh;
   width: 100%;
+  top: 7rem;
+  left: 75%;
   background-image: url(/images/dark-wheat.jpg);
   clip-path: circle(70px at 90% -10%);
   -webkit-clip-path: circle(70px at 90% -10%);
@@ -498,7 +498,7 @@ nav .navigation a {
   transition: all 0.5s ease 0.2s;
 }
 header {
-  background: #f9f8e3;
+  background: #f9f7df;
 }
 header .under-nav {
   display: flex;
@@ -519,7 +519,7 @@ header .under-nav .intro #main-button {
   font-size: 2.2rem;
   font-family: inherit, Sans-serif;
   color: #fff;
-  font-weight: inherit;
+  font-weight: 100;
   background: #5296a5;
   padding: 1.2rem 1.4rem;
   margin-top: 2rem;
@@ -605,10 +605,6 @@ header .under-nav .slide-show img {
     padding-top: 4rem;
   }
 }
-footer {
-  background-image: url(/images/dark-wheat.jpg);
-  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
-}
 footer p {
   text-align: center;
   padding: 0 0 1rem 0;
@@ -670,7 +666,6 @@ footer .top-footer .social-icons a:hover .fa-linkedin {
   }
 }
 .top-main-content {
-  background-image: url(/images/dark-wheat.jpg);
   text-align: center;
 }
 .top-main-content .top {
@@ -787,13 +782,13 @@ body {
   font-size: 62.5%;
   max-width: 144rem;
   margin: 0 auto;
-  background-image: linear-gradient(#245031, #c98f38);
+  background-image: url(/images/dark-wheat.jpg);
   scroll-behavior: smooth;
 }
 p {
   font-size: 2rem;
   font-family: 'Nunito', Sans-serif;
-  color: 0;
+  color: black;
   font-weight: inherit;
   padding: 1.5rem 0;
   line-height: 2.6rem;
@@ -818,6 +813,8 @@ h2 {
 @media (max-width: 900px) {
   h2 {
     font-size: 2.2rem;
+    font-family: 'Mali', Sans-serif;
+    color: #90a955;
     font-weight: bold;
   }
 }
@@ -834,7 +831,9 @@ h3 {
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 1.9rem;
+    font-size: 1.95rem;
+    font-family: 'Mali', Sans-serif;
+    color: #33646e;
     font-weight: bold;
   }
 }
@@ -867,7 +866,6 @@ header a:hover,
   color: #fff;
 }
 .contact-form {
-  background: #f0e9df;
   text-align: center;
   padding-bottom: 2.5rem;
   box-shadow: 2px 5px 9px 4px #b8af89;
@@ -893,10 +891,12 @@ header a:hover,
   padding: 0 0 1.5rem 1.8rem;
 }
 .contact-form form .customer-farmer select {
-  margin-left: 2rem;
   font-size: 2rem;
-  background: #5296a5;
+  font-family: "Nunito", Sans-serif;
   color: #fff;
+  font-weight: normal;
+  background: #5296a5;
+  margin-left: 2rem;
 }
 .contact-form form section {
   border: 1px solid grey;
@@ -905,43 +905,42 @@ header a:hover,
   border-radius: 8px;
 }
 .contact-form form section label {
-  display: block;
-  text-align: left;
   font-size: 1.7rem;
   font-family: "Mali", Sans-serif;
   color: #1b6575;
   font-weight: bold;
+  display: block;
+  text-align: left;
   text-transform: uppercase;
 }
 .contact-form form section input,
 .contact-form form section textarea {
+  font-size: 1.6rem;
+  font-family: "Monaco", Sans-serif;
+  color: #718d30;
+  font-weight: normal;
   width: 100%;
   border: none;
   background: none;
   outline: none;
   margin-top: 7px;
-  font-size: 1.6rem;
-  font-family: "Monaco", Sans-serif;
-  color: #718d30;
-  font-weight: inherit;
 }
 .contact-form form .send-btn {
-  display: block;
   font-size: 1.8rem;
   font-family: "Mali", Sans-serif;
   color: #fff;
-  font-weight: inherit;
+  font-weight: normal;
+  display: block;
+  width: 100%;
   background: #5296a5;
   padding: 14px 0;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 2rem;
-  width: 100%;
 }
 .contact-form form .send-btn:hover {
-  color: #f5c501;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 @media (max-width: 900px) {
   .contact-form {
