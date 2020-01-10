@@ -64,6 +64,7 @@
   font-size: 2.3rem;
   font-family: 'Mali', Sans-serif;
   color: #a85f1a;
+  font-weight: inherit;
   background: #fff;
   align-self: center;
   text-decoration: none;
@@ -212,12 +213,12 @@ table {
   box-sizing: border-box;
 }
 nav {
-  background: #fff;
   height: 8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background: #fff;
   position: fixed;
   top: 0;
   max-width: 144rem;
@@ -316,10 +317,10 @@ nav .navigation a {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    top: 7rem;
-    left: 75%;
     height: 100vh;
     width: 100%;
+    top: 7rem;
+    left: 75%;
     background-image: url(/images/dark-wheat.jpg);
     clip-path: circle(70px at 90% -10%);
     -webkit-clip-path: circle(70px at 90% -10%);
@@ -335,10 +336,9 @@ nav .navigation a {
   nav .open a {
     text-align: center;
     align-self: center;
-    opacity: 0;
     margin: 3vh 0;
     border-radius: 4px;
-    font-size: 6vw;
+    font-size: 5.3vw;
     width: 60%;
     padding: 1rem 0;
   }
@@ -358,9 +358,6 @@ nav .navigation a {
   }
   nav a:nth-child(4) {
     transition: all 0.5s ease 0.2s;
-  }
-  nav a.fade {
-    opacity: 1;
   }
 }
 @media (max-width: 500px) and (max-width: 200px) {
@@ -452,10 +449,10 @@ nav .navigation a {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  top: 7rem;
-  left: 75%;
   height: 100vh;
   width: 100%;
+  top: 7rem;
+  left: 75%;
   background-image: url(/images/dark-wheat.jpg);
   clip-path: circle(70px at 90% -10%);
   -webkit-clip-path: circle(70px at 90% -10%);
@@ -471,10 +468,9 @@ nav .navigation a {
 .drop-down-nav .open a {
   text-align: center;
   align-self: center;
-  opacity: 0;
   margin: 3vh 0;
   border-radius: 4px;
-  font-size: 6vw;
+  font-size: 5.3vw;
   width: 60%;
   padding: 1rem 0;
 }
@@ -501,11 +497,8 @@ nav .navigation a {
 .drop-down-nav a:nth-child(4) {
   transition: all 0.5s ease 0.2s;
 }
-.drop-down-nav a.fade {
-  opacity: 1;
-}
 header {
-  background: #f9f8e3;
+  background: #f9f7df;
 }
 header .under-nav {
   display: flex;
@@ -526,6 +519,7 @@ header .under-nav .intro #main-button {
   font-size: 2.2rem;
   font-family: inherit, Sans-serif;
   color: #fff;
+  font-weight: 100;
   background: #5296a5;
   padding: 1.2rem 1.4rem;
   margin-top: 2rem;
@@ -611,37 +605,67 @@ header .under-nav .slide-show img {
     padding-top: 4rem;
   }
 }
-footer {
-  background-image: url(/images/dark-wheat.jpg);
-  box-shadow: inset 0.2rem 0.2rem 0.8rem 0rem #ad915c;
+footer p {
   text-align: center;
+  padding: 0 0 1rem 0;
 }
-footer .left-footer {
+footer .top-footer {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-}
-footer .left-footer h2 {
-  padding: 1rem 0;
-}
-footer .social-icons {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 3rem 0;
 }
-footer .social-icons img:hover {
-  background-color: #1fd6be;
+footer .top-footer h2 {
+  font-size: 3rem;
+  padding-right: 4rem;
 }
-footer .social-icons a i {
-  font-size: 4rem;
+@media (max-width: 500px) {
+  footer .top-footer h2 {
+    font-size: 6.5vw;
+    padding-right: 7vw;
+  }
 }
-footer .social-icons a i:hover {
-  color: #20a4d8;
+@media (max-width: 200px) {
+  footer .top-footer h2 {
+    display: none;
+  }
+}
+footer .top-footer .social-icons {
+  font-size: 3.7rem;
+}
+@media (max-width: 500px) {
+  footer .top-footer .social-icons {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 200px) {
+  footer .top-footer .social-icons {
+    font-size: 12vw;
+  }
+}
+footer .top-footer .social-icons a {
+  margin-right: 1rem;
+  color: #a85f1a;
+}
+footer .top-footer .social-icons a:hover .fa-facebook-f {
+  color: #4267b2;
+}
+footer .top-footer .social-icons a:hover .fa-twitter {
+  color: #38A1F3;
+}
+footer .top-footer .social-icons a:hover .fa-youtube {
+  color: #ED3833;
+}
+footer .top-footer .social-icons a:hover .fa-linkedin {
+  color: #0077B5;
+}
+@media (max-width: 200px) {
+  footer .top-footer .social-icons a {
+    margin-right: 6vw;
+  }
 }
 .top-main-content {
-  background-image: url(/images/dark-wheat.jpg);
   text-align: center;
 }
 .top-main-content .top {
@@ -656,6 +680,7 @@ footer .social-icons a i:hover {
 @media (max-width: 900px) {
   .top-main-content .top h2 {
     font-size: 4vw;
+    font-weight: lighter;
   }
 }
 .top-main-content .arrow-down {
@@ -668,6 +693,11 @@ footer .social-icons a i:hover {
   }
   .top-main-content .top h2 {
     font-size: 5vw;
+  }
+}
+@media (max-width: 700px) and (max-width: 200px) {
+  .top-main-content .top h2 {
+    font-size: 6.5vw;
   }
 }
 .main-content {
@@ -752,13 +782,14 @@ body {
   font-size: 62.5%;
   max-width: 144rem;
   margin: 0 auto;
-  background-image: linear-gradient(#245031, #c98f38);
+  background-image: url(/images/dark-wheat.jpg);
   scroll-behavior: smooth;
 }
 p {
   font-size: 2rem;
   font-family: 'Nunito', Sans-serif;
-  color: 0;
+  color: black;
+  font-weight: inherit;
   padding: 1.5rem 0;
   line-height: 2.6rem;
 }
@@ -770,39 +801,45 @@ p {
 @media (max-width: 200px) {
   p {
     line-height: 5vh;
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 }
 h2 {
   font-size: 2.9rem;
   font-family: 'Mali', Sans-serif;
   color: #90a955;
-  font-weight: bold;
+  font-weight: inherit;
 }
 @media (max-width: 900px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-family: 'Mali', Sans-serif;
+    color: #90a955;
+    font-weight: bold;
   }
 }
 @media (max-width: 200px) {
   h2 {
-    font-size: 7vw;
+    font-size: 7.2vw;
   }
 }
 h3 {
   font-size: 2.4rem;
   font-family: 'Mali', Sans-serif;
   color: #33646e;
-  font-weight: bold;
+  font-weight: inherit;
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.95rem;
+    font-family: 'Mali', Sans-serif;
+    color: #33646e;
+    font-weight: bold;
   }
 }
 @media (max-width: 200px) {
   h3 {
-    font-size: 6vw;
+    font-size: 6.9vw;
   }
 }
 header a,
@@ -810,6 +847,7 @@ header a,
   font-size: 2.3rem;
   font-family: 'Mali', Sans-serif;
   color: #a85f1a;
+  font-weight: inherit;
   background: #fff;
   align-self: center;
   text-decoration: none;
@@ -828,7 +866,6 @@ header a:hover,
   color: #fff;
 }
 .contact-form {
-  background: #f0e9df;
   text-align: center;
   padding-bottom: 2.5rem;
   box-shadow: 2px 5px 9px 4px #b8af89;
@@ -854,10 +891,12 @@ header a:hover,
   padding: 0 0 1.5rem 1.8rem;
 }
 .contact-form form .customer-farmer select {
-  margin-left: 2rem;
   font-size: 2rem;
-  background: #5296a5;
+  font-family: "Nunito", Sans-serif;
   color: #fff;
+  font-weight: normal;
+  background: #5296a5;
+  margin-left: 2rem;
 }
 .contact-form form section {
   border: 1px solid grey;
@@ -866,41 +905,42 @@ header a:hover,
   border-radius: 8px;
 }
 .contact-form form section label {
-  display: block;
-  text-align: left;
   font-size: 1.7rem;
   font-family: "Mali", Sans-serif;
   color: #1b6575;
   font-weight: bold;
+  display: block;
+  text-align: left;
   text-transform: uppercase;
 }
 .contact-form form section input,
 .contact-form form section textarea {
+  font-size: 1.6rem;
+  font-family: "Monaco", Sans-serif;
+  color: #718d30;
+  font-weight: normal;
   width: 100%;
   border: none;
   background: none;
   outline: none;
   margin-top: 7px;
-  font-size: 1.6rem;
-  font-family: "Monaco", Sans-serif;
-  color: #718d30;
 }
 .contact-form form .send-btn {
-  display: block;
   font-size: 1.8rem;
   font-family: "Mali", Sans-serif;
   color: #fff;
+  font-weight: normal;
+  display: block;
+  width: 100%;
   background: #5296a5;
   padding: 14px 0;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 2rem;
-  width: 100%;
 }
 .contact-form form .send-btn:hover {
-  color: #f5c501;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 @media (max-width: 900px) {
   .contact-form {

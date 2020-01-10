@@ -2,12 +2,12 @@ html, body {
 	font-size: 62.5%;
 	max-width: 144rem;
 	margin: 0 auto;
-	background-image: linear-gradient(#245031, #c98f38);
+	background-image: url(/images/dark-wheat.jpg);
 	scroll-behavior: smooth;
 }
 
 p {
-	.text-style(2rem, 'Nunito', 0);
+	.text-style(2rem, 'Nunito', black, inherit);
 	padding: 1.5rem 0;
 	line-height: 2.6rem;
 
@@ -17,33 +17,31 @@ p {
 
 	@media @very-small-device {
 		line-height: 5vh;
-		font-size: 7vw;
+		font-size: 6.5vw;
 	}
 }
 
 h2 {
-	.text-style(2.9rem, 'Mali', #90a955);
-	font-weight: bold;
+	.text-style(2.9rem, 'Mali', #90a955, inherit);
 
 	@media @tablet {
-		font-size: 2rem;
+		.text-style(2.2rem, 'Mali', #90a955, bold);
 	}
 
 	@media @very-small-device {
-		font-size: 7vw;
+		font-size: 7.2vw;
 	}
 }
 
 h3 {
-	.text-style(2.4rem, 'Mali', #33646e);
-	font-weight: bold;
+	.text-style(2.4rem, 'Mali', #33646e, inherit);
 
 	@media @tablet {
-		font-size: 1.8rem;
+		.text-style(1.95rem, 'Mali', #33646e, bold);
 	}
 
 	@media @very-small-device {
-		font-size: 6vw;
+		font-size: 6.9vw;
 	}
 }
 
@@ -52,7 +50,3 @@ header, .under-nav {
 		.links-style();
 	}
 }
-
-// * {
-// 	border: 1px solid red!important;
-// }

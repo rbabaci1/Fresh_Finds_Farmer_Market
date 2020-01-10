@@ -1,5 +1,4 @@
 .contact-form {
-    background: #f0e9df;
     text-align: center;
     padding-bottom: 2.5rem;
     box-shadow: 2px 5px 9px 4px #b8af89;
@@ -25,10 +24,9 @@
             padding: 0 0 1.5rem  1.8rem;
 
             select {
-                margin-left: 2rem;
-                font-size: 2rem;
+                .text-style(2rem, "Nunito", #fff, normal);
                 background: #5296a5;
-                color: #fff;
+                margin-left: 2rem;
             }
         }
 
@@ -39,37 +37,35 @@
             border-radius: 8px;
 
             label {
+                .text-style(1.7rem, "Mali", #1b6575, bold);
                 display: block;
                 text-align: left;
-                .text-style(1.7rem, "Mali", #1b6575);
-                font-weight: bold;
                 text-transform: uppercase;
             }
 
             input, textarea {
+                .text-style(1.6rem, "Monaco", #718d30, normal);
                 width: 100%;
                 border: none;
                 background: none;
                 outline: none;
                 margin-top: 7px;
-                .text-style(1.6rem, "Monaco", #718d30);
             }
         }
 
         .send-btn {
+            .text-style(1.8rem, "Mali", #fff, normal);
             display: block;
-            .text-style(1.8rem, "Mali", #fff);
+            width: 100%;
             background: #5296a5;
             padding: 14px 0;
             text-align: center;
             text-transform: uppercase;
             cursor: pointer;
             margin-top: 2rem;
-            width: 100%;
 
             &:hover {
-                color: #f5c501;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
             }
         }
     }
@@ -102,6 +98,7 @@
 
             .customer-farmer {
                 flex-direction: column;
+
                 h3 {
                     font-size: 2rem;
                 }
@@ -114,6 +111,7 @@
             section {
                 label {
                     font-size: 7vw;
+
                     input, textarea {
                         font-size: 6vw;
                     }

@@ -1,5 +1,4 @@
 .top-main-content {
-    background-image: url(/images/dark-wheat.jpg);
     text-align: center;
 
     .top {
@@ -13,6 +12,7 @@
 
             @media @tablet {
                 font-size: 4vw;
+                font-weight: lighter;
             }
         }
     }
@@ -27,6 +27,10 @@
             padding: 1.5rem 0;
             h2 {
                 font-size: 5vw;
+
+                @media @very-small-device {
+                    font-size: 6.5vw;
+                }
             }
         }
     }
@@ -62,6 +66,7 @@
 
             div {
                 width: 48%;
+
                 img {
                     width: 100%;
                 }
