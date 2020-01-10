@@ -624,8 +624,29 @@ footer .top-footer h2 {
   font-size: 3rem;
   padding-right: 4rem;
 }
+@media (max-width: 500px) {
+  footer .top-footer h2 {
+    font-size: 6.5vw;
+    padding-right: 7vw;
+  }
+}
+@media (max-width: 200px) {
+  footer .top-footer h2 {
+    display: none;
+  }
+}
 footer .top-footer .social-icons {
   font-size: 3.7rem;
+}
+@media (max-width: 500px) {
+  footer .top-footer .social-icons {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 200px) {
+  footer .top-footer .social-icons {
+    font-size: 12vw;
+  }
 }
 footer .top-footer .social-icons a {
   margin-right: 1rem;
@@ -642,6 +663,11 @@ footer .top-footer .social-icons a:hover .fa-youtube {
 }
 footer .top-footer .social-icons a:hover .fa-linkedin {
   color: #0077B5;
+}
+@media (max-width: 200px) {
+  footer .top-footer .social-icons a {
+    margin-right: 6vw;
+  }
 }
 .top-main-content {
   background-image: url(/images/dark-wheat.jpg);
